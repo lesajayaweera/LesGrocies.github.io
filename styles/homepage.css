@@ -136,7 +136,7 @@ li a{
     padding-right:50px;
     padding-left:50px;
     margin-left:0;
-    color:#F6F6E9;
+    color:black;
 }
 ul li{
     list-style-type: none;
@@ -144,14 +144,14 @@ ul li{
     margin: 0;
 }
 ul li a:hover{
-    background-color: #dddddd;
-    color:#9DC5BB;
+    
+    color:#DEE5E5;
     border-color: #9DC5BB;
     font-weight:bold;
 
 }
 ul li a:active{
-    background-color: #9DC5BB;
+    background-color: ;
     color:#dddddd;
     
 }
