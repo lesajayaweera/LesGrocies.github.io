@@ -29,12 +29,13 @@
     border-style:none;
     max-width:350px;
     background-color:#F6F6E9;
+    color:#9DC5BB;
 
 
 }
 .search-button{
     height:35px;
-    background-color:#ffb347;
+    background-color:#9DC5BB;
     border:1px;
     border-top-right-radius: 20%;
     cursor:pointer;
@@ -49,7 +50,7 @@
 }
 .brand-name{
     width:300px;
-    color:#0074d9;
+    color:#17B890;
     font-family:"taviraj",sans-serif; 
     margin:0 0 0 10px;
     font-weight:1000;
@@ -63,7 +64,7 @@
 .logo{
     width:100%;
     border-radius: 50%;
-    border-color: #F6F6E9;
+    border-color: #9DC5BB;
 }
 /*the right section of the header*/
 .right-section{
@@ -97,32 +98,31 @@
 body{
     margin-left:0px;
     margin-top:200px;
-    background-color: #dddddd;
+    background-color: #DEE5E5;
     
 
 }
 .all-button{
     height:40px;
     width:40px;
-    background-color:#ffb347;
+    background-color:#9DC5BB;
     border:1px;
     cursor:pointer;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    
 }
 
 /*the navigational pannel*/
 
 ul{
-    background-color:#0074d9 ;
+    background-color:#17B890 ;
     position:fixed;
     left:0;
     right:0;
     top:100px;
     overflow:hidden;
     font-family:"taviraj",sans-serif;
-    border:1px;
-    border-bottom: #0074d9;
     text-align: center;
     padding:10px 0 10px 0;
     
@@ -145,13 +145,13 @@ ul li{
 }
 ul li a:hover{
     background-color: #dddddd;
-    color:#ffb347;
-    border-color: #ffb347;
+    color:#9DC5BB;
+    border-color: #9DC5BB;
     font-weight:bold;
 
 }
 ul li a:active{
-    background-color: #ffb347;
+    background-color: #9DC5BB;
     color:#dddddd;
     
 }
@@ -160,16 +160,47 @@ p{
 }
 /*section  cateogories and banners*/
 .section1-conatiner{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction:row;
+    flex: 50% 50%
+    
+      
 }
-.banner-div{
-    width:1500px;
+.banner-aboutus{
+    display:flex;
+    flex-direction:row;
+    flex: 1 1;
+    justify-content: space-evenly;
 }
 .banners{
     width:100%;
-}      
-.banner-aboutus{
-    display:flex;
-    flex-direction: row;
+}
+
+.banner-div{
+    width:800px;
+}
+
+.grocies-aboutus{
+    width:400px;
+    border:1px;
+    border-color:#9DC5BB;
+}
+span{
+    font-family:sans-serif,arial;
+    
+}
+.header-paragraph{
+    font-size:larger;
+    font-family:sans-serif,arial;
+    color:#17B890  ;
+    padding-bottom: 10px;
+    font-weight: bold;
+    
+}
+.store-building{
+    width:250px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+
 }
