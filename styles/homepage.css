@@ -160,17 +160,16 @@ p{
 }
 /*section  cateogories and banners*/
 .section1-conatiner{
-    display: flex;
-    flex-direction:row;
-    flex: 50% 50%
+    display: grid;
+    grid-template-columns: auto 500px;
+    
     
       
 }
 .banner-aboutus{
-    display:flex;
-    flex-direction:row;
-    flex: 1 1;
-    justify-content: space-evenly;
+    display:grid;
+    grid-template-columns: auto 500px;
+    
 }
 .banners{
     width:100%;
