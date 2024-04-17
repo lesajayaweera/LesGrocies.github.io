@@ -62,7 +62,7 @@
 .section3{
     background-color:#9DC5BB;
     padding-bottom:10px;
-    height:400px
+    height:450px;
 }
 .cateogory-container{
     display:grid;
@@ -109,7 +109,9 @@
 }
 .product-main-container{
     display:grid;
-    grid-template-columns:200px 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px;
+    column-gap: 20px;
+    
     
 }
 .product-image{
@@ -128,11 +130,14 @@
 }
 .product-container{
     width:200px;
-    height:300px;
+    height:335px;
+    padding-bottom:5px;
     background-color:#DEE5E5;
-    border-radius:10px;
-
-
+    border-radius:8px;
+    transition:box-shadow 0.15s;
+}
+.product-container:hover{
+    box-shadow: 0 0 5px #17B890;
 }
 .product-text{
     width:150px;
@@ -154,7 +159,7 @@
 .price{
     text-align:center;
     font-weight:bold;
-    padding-bottom:10px;
+    
 }
 .add-to-cart-button{
     width:200px;
@@ -163,5 +168,13 @@
     width:100%;
     border-style:none;
     background-color:#17B890;
-    height:35px;
+    height:30px;
+    transition:background-color 0.15s,color 0.15s,box-shadow 0.15s, font-weight 0.15s;
+}
+.cart-button:hover{
+    background-color:#9DC5BB;
+    color:#17B890;
+    box-shadow:0 0 5px #17B890;
+    font-weight: 700;
+
 }
