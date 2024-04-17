@@ -1,0 +1,21 @@
+body{
+    margin-left:0px;
+    margin-top:180px;
+    margin-right:0;
+    background-color: #DEE5E5;
+    font-family:sans-serif,taviraj;
+    padding-bottom:10000px; 
+    
+
+}
+a{
+    text-decoration:none;
+}
+p{
+    color:black;
+}
+hr{
+    border-color: #9DC5BB;
+    border-style:solid;
+    border-width:1px;
+}
