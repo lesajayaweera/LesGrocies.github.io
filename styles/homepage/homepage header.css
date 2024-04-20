@@ -1,5 +1,8 @@
 
 /*the  heaader section*/
+header{
+    z-index:100;
+}
 .main-header{
     background-color: #dddddd;
     height: 80px;
@@ -112,7 +115,7 @@
 
 /*the navigational pannel*/
 
-ul{
+.main-nav{
     background-color:#17B890 ;
     position:fixed;
     left:0;
@@ -124,12 +127,13 @@ ul{
     padding:10px 0 10px 0;
     font-weight:600;
     font-size: large;
-    
-    
-    
-
 }
-li a{
+.sub-nav{
+    list-style-type: none;
+    float:left;
+    margin: 0;
+}
+.sub-nav a{
     display:block;
     text-decoration:none;
     padding-right:50px;
@@ -137,19 +141,15 @@ li a{
     margin-left:0;
     color:white;
 }
-ul li{
-    list-style-type: none;
-    float:left;
-    margin: 0;
-}
-ul li a:hover{
+
+.sub-nav a:hover{
     
     color:#DEE5E5;
     border-color: #9DC5BB;
     font-weight:bold;
 
 }
-ul li a:active{
+.sub-nav a:active{
     background-color: ;
     color:#dddddd;
     
