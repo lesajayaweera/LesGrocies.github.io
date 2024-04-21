@@ -4,7 +4,7 @@ body{
     margin-right:0;
     background-color: #DEE5E5;
     font-family:sans-serif,taviraj;
-    padding-bottom:10000px; 
+    padding-bottom:auto 
     
 
 }
@@ -18,4 +18,8 @@ hr{
     border-color: #9DC5BB;
     border-style:solid;
     border-width:1px;
+}
+footer{
+    height:auto;
+    
 }

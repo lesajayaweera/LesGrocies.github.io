@@ -43,6 +43,14 @@ header{
     border:1px;
     border-top-right-radius: 20%;
     cursor:pointer;
+    transition:all 0.5s;
+}
+.search-button:hover{
+    background-color:#17B890;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+    border-width: 1px;
+    border-color:#9DC5BB;
+    border-style:solid;    
 }
 /*the left section of the header*/
 .left-section{
@@ -78,17 +86,22 @@ header{
     display:flex;
     flex:300px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-right: 50px;
+}
+.hot-deal{
+    margin-right:50px;
 }
 .hot-deals-icon{
     width:90px;
     margin-left:10px;
+    transition:all 0.5s;
     
 }
 .hot-deals-icon:hover{
-    opacity:30%;
+    opacity:50%;
     cursor:pointer;
+    
 }
 .cart-icon{
     width:100%;
@@ -110,7 +123,16 @@ header{
     cursor:pointer;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    transition:all 0.5s;
     
+}
+.all-button:hover{
+    background-color:#17B890;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+    border-width: 1px;
+    border-color:#9DC5BB;
+    border-style:solid;    
+
 }
 
 /*the navigational pannel*/

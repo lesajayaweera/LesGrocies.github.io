@@ -1,0 +1,137 @@
+.aboutus-image-container{
+    width:auto;
+    height:auto;
+}
+.main-aboutus-image{
+    width:100%;
+    object-fit: cover;
+    height:370px;
+}
+
+/*footer css*/
+.footer-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+}
+.footer-main-container{
+    margin-top:50px;
+    margin-left:50px;
+    margin-right:50px;
+}
+.logo-footer{
+    width:70%;
+    border-radius: 70%;
+}
+.brand-footer{
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 1 1;
+    justify-content: space-between;
+    /*border-right-width:1px ;
+    border-right-style:solid ;
+    border-right-color: #17B890;*/
+}
+.brand-name-footer{
+    width:200px;
+    color:#17B890;
+    font-family:"taviraj",sans-serif; 
+    margin:0 0 0 10px;
+    font-weight:1000;
+    font-size:medium;
+    margin-left:0;
+}
+.logo-footer-container{
+    display:grid;
+    grid-template-columns: 1fr 300px;
+}
+.footer-description{
+    width:300px;
+    font-size: small;
+    margin-top:5px;
+    
+}
+.location,.mail,.call{
+    display:grid;
+    grid-template-columns:30px 175px;
+    column-gap: 2px;
+    margin-top:10px;
+
+}
+.location-icon-container{
+    width:30px;
+}
+.location-icon{
+    width:100%;
+}
+
+.mail-text{
+    width:300px;
+    font-size: small;
+    margin-top:0;
+    text-decoration: none;
+    color:#17B890
+}
+.useful-links-header{
+    font-family:taviraj;
+    font-weight: 1000;
+    color:#17B890;
+    margin-top:0;
+}
+.useful-links-header2{
+    color:black;
+}
+.footer-list{
+    text-decoration: none;
+    color:black;
+    font-size:small;
+}
+.social-media-container{
+    display:grid;
+    grid-template-columns: 40px 40px 40px 40px 40px;
+    column-gap: 20px;
+
+
+}
+.social-media-image-container{
+    width:40px;
+}
+.social-media-image{
+    width:100%;
+    transition:all 0.5s;
+}
+.social-media-image:hover{
+    opacity:0.7;
+}
+.newsletter-footer{
+    margin-left:50px;
+}
+.subscribe-button{
+    width:auto;
+    background-color: #17B890;
+    color:black;
+    border-style:none;
+    padding:  5px 10px 5px 10px;
+    font-family:taviraj;
+    font-weight:700;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 0.5s;
+}
+.subscribe-button:hover{
+    background-color:#17B890;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+    border-width: 1px;
+    border-color:#9DC5BB;
+    border-style:solid;
+}
+.subscribe-button:active{
+    background-color:#9DC5BB;
+}
+.email-input{
+    padding:5px ;   
+}
+.rights-footer{
+    text-align: center;
+    font-size:small;
+}
