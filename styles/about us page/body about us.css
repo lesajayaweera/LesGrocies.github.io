@@ -93,7 +93,23 @@
     width:600px;
 }
 .map{
-    width:100%
+    width:100%;
+}
+table{
+    width:100%;
+
+}
+tr:nth-child(even){
+    background-color:#9DC5BB
+}
+table th{
+    background-color:#17B890
+}
+tfoot{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #17B890;
+
 }
 /*footer css*/
 .footer-container{
