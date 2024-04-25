@@ -147,7 +147,7 @@
     margin-left:50px;
     margin-right:50px;
     margin-bottom:10px;
-    
+     
     
 }
 .p-images{
@@ -253,6 +253,12 @@
 #name{
     color:#17B890;
 }
+
+
+
+
+
+
 /*About us page*/
 .section4{
     margin-bottom:5px;
@@ -380,4 +386,24 @@ tfoot{
 }
 .main-section3-container{
     width:100%;
+    height:auto;
+    
+    
+}
+
+
+/*vegetable product page*/
+.section8{
+    margin:5px 10px 5px 10px;
+    background-color: #9DC5BB;
+    height:auto;
+    width:auto;
+    margin:0
+}
+.product-main-container{
+    
+    display:grid;
+    grid-template-columns: auto auto a;
+    row-gap: 20px; 
+    margin-top:10px;  
 }
