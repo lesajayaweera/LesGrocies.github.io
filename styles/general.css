@@ -4,8 +4,8 @@ body{
     margin-right:0;
     background-color: #DEE5E5;
     font-family:sans-serif,taviraj;
-    padding-bottom:auto 
-    
+    padding-bottom:auto ;
+    padding-right:auto;
 
 }
 a{
@@ -21,6 +21,8 @@ hr{
 }
 footer{
     height:auto;
+    width:100%;
+    
     
 }
 nav{

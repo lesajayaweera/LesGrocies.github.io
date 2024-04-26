@@ -92,7 +92,8 @@
 .section3{
     width:100%;
     background-color:#DEE5E5;
-    padding-bottom:10px;
+    height: auto;
+    padding-bottom: 5%;
     transition: all 1.5s;
     
 }
@@ -140,16 +141,20 @@
     transition-timing-function: ease-in-out;
 }
 .product-main-container{
-    
+    padding-top: 2%;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 20px; 
-    margin-left:50px;
-    margin-right:50px;
-    margin-bottom:10px;
+    padding-bottom: auto;
+    width:80%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 2%;
+    column-gap: 2%; 
+    margin-left:auto;
+    margin-right:auto;
+   
      
     
 }
+
 .p-images{
     width:80%;
     display: block;
@@ -166,6 +171,7 @@
     background-color:#DEE5E5;
     border-radius:8px;
     transition:box-shadow 0.15s;
+    
 }
 .product-container:hover{
     box-shadow: 0 0 5px #17B890;
@@ -385,25 +391,77 @@ tfoot{
     color:white;
 }
 .main-section3-container{
-    width:100%;
+    width:90%;
     height:auto;
+    margin-left:auto;
+    margin-right:auto;
     
     
 }
+@media (max-width:600px){
+    .welcome-main-container{
+        grid-template-rows: auto 1fr;
+
+    }
+}
+
+/**/
 
 
 /*vegetable product page*/
 .section8{
-    margin:5px 10px 5px 10px;
+    
     background-color: #9DC5BB;
     height:auto;
-    width:auto;
-    margin:0
+    width:100%;
+    margin:0;
+    padding-bottom: 5%;
 }
-.product-main-container{
-    
+.cateogory-vegetable-text-container{
+    width:80%;
+    margin-left: auto;
+    margin-right:auto;
+}
+.cateogory-vegetable-text{
+    text-align:center;
+    width:100%;
+
+}
+.text-highlight{
+    color:white;
+    font-weight:700;
+}
+.hr-header2{
+    border-color:#DEE5E5;
+    border-style: solid;
+    width:50%;
+}
+.product-main-container1{
+    padding-top: 2%;
     display:grid;
-    grid-template-columns: auto auto a;
-    row-gap: 20px; 
-    margin-top:10px;  
+    padding-bottom: auto;
+    width:80%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 2%; 
+    margin-left:auto;
+    margin-right:auto;
+   
+}
+/* Dairy product page  */
+.product-main-container2{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-evenly;
+    width:80%;
+    margin-right:auto;
+    margin-left:auto;
+
+}
+.product-main-container2 .product-container{
+    margin-bottom:2rem;
+    margin-top:2rem;
+}
+.list-dairy-products li{
+    padding:1rem;
 }
