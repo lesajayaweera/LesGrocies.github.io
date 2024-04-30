@@ -566,7 +566,7 @@ fieldset{
     
 }
 .subscribe-button1{
-    width:auto;
+    width:10rem;
     background-color: #17B890;
     color:black;
     border-style:none;
@@ -589,6 +589,15 @@ fieldset{
 }
 #button-container{
     display:flex;
-    
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
+}
+/*order page*/
+.order-page-main-container {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+
 }
