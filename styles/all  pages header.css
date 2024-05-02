@@ -183,7 +183,7 @@ header{
 /*media queries*/
 @media all and (max-width:1049px){
     .brand-name{
-        font-size:larger;
+        font-size:3rem;
         color:blue;
     }
     .left-section{
