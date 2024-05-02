@@ -1,22 +1,25 @@
 /*homepage*/
-.container{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
-    
-
-}
+ 
 .banner{
     width:100%;
-    
+    margin-left:auto;
+    margin-right:auto;
+    height:450px; 
+}
+.banner-container{
+    margin-left:auto;
+    margin-right:auto;
+    /* width:90% */
 }
 .aboutus-images{
-    width:100%;
+    width:75%;
+    object-fit: contain;
    
 }
 .about-container{
+    
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:40% 1fr;
     column-gap:10px;
     border-radius:8px;
     transition:all 0.5s;
@@ -48,7 +51,9 @@
 .aboutus-body{
     color:black;
 }
-.section1,.section2,.section3{
+.section1,.section2,.section3,footer{
+
+    width:100%;
     border-width:1px;
     border-style:none;
     border-color:#9DC5BB;
@@ -58,7 +63,7 @@
 }
 .section1{
     transition:all 2s;
-    height:auto;
+    
 }
 .section1:hover{
     background-color: #9DC5BB;
@@ -90,7 +95,7 @@
     background-color: #9DC5BB;
 }
 .section3{
-    width:100%;
+   
     background-color:#DEE5E5;
     height: auto;
     padding-bottom: 5%;

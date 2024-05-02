@@ -16,7 +16,7 @@ header{
     right:0px; 
     padding:20px 0 20px 0;
     position:fixed;
-    width:100%;
+    width:auto;
 }
 /*the middle section of the header */
 .middle-section{
@@ -27,13 +27,14 @@ header{
 
 }
 .search{
-    width:300px;
+    flex:1;
+    width:0;
     height:35px;
     font-size:14px;
     font-family:sans-serif,arial;
     border-bottom-left-radius:6px;
     border-style:none;
-    max-width:350px;
+    max-width:500px;
     background-color:#F6F6E9;
     color:#9DC5BB;
 
@@ -175,9 +176,20 @@ header{
 
 }
 .sub-nav a:active{
-    background-color: ;
     color:#dddddd;
     
 }
 
-/**/
+/*media queries*/
+@media all and (max-width:1049px){
+    .brand-name{
+        font-size:smaller;
+        color:blue;
+    }
+    .left-section{
+        padding-left:5px;
+    }
+    .sub-nav{
+        font-size:large;
+    }
+}
