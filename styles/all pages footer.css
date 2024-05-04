@@ -5,9 +5,10 @@
     justify-content: space-evenly;
 }
 .footer-main-container{
-    margin-top:50px;
+    padding-top: 50px;;
     margin-left:50px;
     margin-right:50px;
+    font-size: 1.5rem;
 }
 .logo-footer{
     width:70%;
@@ -28,7 +29,7 @@
     font-family:"taviraj",sans-serif; 
     margin:0 0 0 10px;
     font-weight:1000;
-    font-size:medium;
+    
     margin-left:0;
 }
 .logo-footer-container{
@@ -124,4 +125,5 @@
 .rights-footer{
     text-align: center;
     font-size:small;
+    margin-bottom:0;
 }

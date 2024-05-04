@@ -4,6 +4,8 @@ body{
     margin-right:0;
     background-color: #DEE5E5;
     font-family:sans-serif,taviraj;
+    margin-bottom:0;
+    font-size:1rem;
    
 }
 a{
@@ -18,10 +20,8 @@ hr{
     border-width:1px;
 }
 footer{
-    height:auto;
-    
-    
-    
+    font-size: 1.5rem;
+
 }
 nav{
     position:relative;
