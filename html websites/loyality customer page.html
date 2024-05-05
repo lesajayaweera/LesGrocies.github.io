@@ -49,13 +49,13 @@
            
         </div>  
         <nav>
-            <ul class="main-nav">
-                <li class="sub-nav"><a href="../index.html" >Home</a></li>
-                <li class="sub-nav"><a href="About us.html">About us</a></li>
-                <li class="sub-nav"><a href="products.html">Products</a></li>
-                <li class="sub-nav"><a href="loyality customer page.html">Loyalty Benifits</a></li>
-                
-            </ul>
+            <div class="top-nav-container">
+                <a href="../index.html">Home</a>
+                <a href="About us.html">About us</a>
+                <a href="products.html">Products</a> 
+                <a href="loyality customer page.html">Loyalty Benifits</a>
+                <a href="order page.html" class="split-nav">Order Now</a>
+            </div>
         </nav>
 
     </header>
@@ -123,17 +123,22 @@
                     <caption>REQUIRED</caption>
                     <fieldset id="feildset1">
                         
-                            <table >
+                            <table>
                                 <tr>
                                     <td>First Name:</td>
                                     <td><input type="text" size="50" maxlength="60" name="cfname" placeholder="Enter the First Name"  required></td>
-                                    <td>Last Name:</td>
-                                    <td><input type="text" size="50" placeholder="Enter the Last Name"></td>
+                                   
                                     
                                 </tr>
                                 <tr>
-                                   <td>Contact Number:</td>
+                                    <td>Last Name:</td>
+                                    <td><input type="text" size="50" placeholder="Enter the Last Name"></td>
+                                </tr>
+                                <tr>
+                                    <td>Contact Number:</td>
                                    <td><input type="tel" name="telno" size="10" maxlength="10" placeholder="Enter your conatct number" required></td>
+                                </tr>
+                                <tr>
                                    <td>Email:</td>
                                    <td><input type="email"  name="email" placeholder="email@example.com" required></td>
                                 </tr>

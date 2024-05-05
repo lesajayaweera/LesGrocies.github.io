@@ -177,7 +177,7 @@ header{
     
 } */
 .top-nav-container{
-    background-color:#5ABFA6;
+    background-color:#17B890;
     position:fixed;
     left:0;
     right:0;
@@ -196,12 +196,14 @@ header{
     text-decoration:none;
     padding:14px 16px;
     color:white;
+    transition: all 0.5s;
 
 }
 .top-nav-container a.split-nav{
     float: right;
-    background-color:#17B890;
+    background-color:#9DC5BB;
     color:white;
+    transition: all 0.5s;
 }
 .top-nav-container a.split-nav:hover{
     float: right;
@@ -212,7 +214,7 @@ header{
     float:left;
     text-decoration:none;
     padding:14px 16px;
-    color:white;
-    background-color:#17B890;
+    color:black;
+    background-color:#5ABFA6;
 
 }

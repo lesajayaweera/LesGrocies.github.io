@@ -216,8 +216,7 @@
 }
 .product-container{
     /* padding-left:10px; */
-    margin-right:3px;
-    margin-bottom:2rem;
+    margin:1rem;
     width:200px;
     height:19em;
     background-color:#DEE5E5;
@@ -291,15 +290,7 @@
     font-weight: 700;
     text-shadow: 0 0 5px #DEE5E5;
 }
-#name{
-    color:white;
-    font-family:taviraj;
-    font-weight:bold;
-}
 
-#name{
-    color:#17B890;
-}
 
 .product-detail-image{
     width:100%;
@@ -346,6 +337,40 @@
     margin-top:0;
 }
 
+
+@media all and (max-width:1244px){
+    #about-us-container{
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        width:90%;
+        margin-bottom: 5%;
+    }
+    #aboutus-image-container{
+        width:auto;
+        
+    }
+    #about-us-image{
+        width:100%;
+        margin-top:10%;
+    }
+    .aboutus-header{
+        margin-top:5%;
+    }
+    .product-detail-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+    
+    .ul-list ul li{
+        font-size: 1.5rem;
+    }
+    .product-detail-images-container{
+        margin-top:10%;
+    }
+
+}
 /*About us page*/
 .section4{
     margin-bottom:5px;
@@ -421,9 +446,6 @@
     width:100%;
     
 }
-
-
-
 .location-container{
     display:flex;
     flex-direction: column;
@@ -533,12 +555,23 @@ tfoot{
     
     
 }
-@media all and (max-width:600px){
+@media all and (max-width:1517px){
     .welcome-main-container{
-        grid-template-rows: auto 1fr;
-
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .location-map-text-images-container{
+        flex-direction:column;
+    }
+    .location-image-container{
+        align-items: center;
+        margin-bottom:1%;
+    }
+    .service-table{
+        font-size:2rem;
     }
 }
+
 
 /**/
 
@@ -557,10 +590,12 @@ tfoot{
     width:80%;
     margin-left: auto;
     margin-right:auto;
+   
 }
 .cateogory-vegetable-text{
     text-align:center;
     width:100%;
+    margin-bottom:10%;
 
 }
 .text-highlight{
@@ -573,24 +608,47 @@ tfoot{
     width:50%;
 }
 .product-main-container1{
-    place-items: center;
+   
     padding-bottom:5%;
     padding-top: 2%;
     display:grid;
-    padding-bottom: auto;
     width:80%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     row-gap: 2%; 
     margin-left:auto;
     margin-right:auto;
+    margin-top:10%;
    
 }
-@media all and (max-width:1134px){
+@media all and (max-width:1318px){
+    .product-main-container1{
+        grid-template-columns: 1fr 1fr 1fr ;
+        margin-bottom:80%;
+    }
+
+}
+@media all and (max-width:828px){
     .product-main-container1{
         grid-template-columns: 1fr 1fr;
+        margin-bottom: 65%;
+        width:60%;
+        margin-left: auto;
+        margin-right: auto;
     }
-    
 }
+@media all and (max-width:521px){
+    .product-main-container1{
+        grid-template-columns: 1fr;
+        width:50%;
+        row-gap: 0;
+
+    }
+    .section8{
+        
+    }
+}
+
+
 /* Dairy product page  */
 .product-main-container2{
     display:flex;
@@ -637,6 +695,20 @@ tfoot{
     margin-left:auto;
     margin-right:auto;
     padding-top: 1%;
+
+}
+@media all and (max-width:1280px){
+    .loyalty-main-box{
+        flex-direction: column;
+    }
+    .premium-pass-container,.grand-pass-container,.platinum-pass-container{
+        margin-top:5%;
+        margin-right: 0;
+    }
+    .loyalty-main-image{
+        width:100%;
+    }
+
 
 }
 .loyalty-header{
