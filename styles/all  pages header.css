@@ -7,6 +7,7 @@ header{
     background-color: #dddddd;
     height: 80px;
     display:flex;
+    flex:300px 1 250px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -16,27 +17,30 @@ header{
     right:0px; 
     padding:20px 0 20px 0;
     position:fixed;
-    width:100%;
+    
 }
 /*the middle section of the header */
 .middle-section{
     display:flex;
     flex:1;
     align-items: center;
-    max-width:500px;
+    max-width:50%;
+    min-width: 1%;
+    
 
 }
 .search{
     flex:1;
-    width:0;
+    display: flex;
     height:35px;
     font-size:14px;
     font-family:sans-serif,arial;
     border-bottom-left-radius:6px;
     border-style:none;
-    max-width:500px;
     background-color:#F6F6E9;
     color:#9DC5BB;
+    max-width: 600px;
+    min-width:0;
 
 
 }
@@ -58,10 +62,11 @@ header{
 /*the left section of the header*/
 .left-section{
     display:flex;
-    flex:150px;
+    flex:1;
     align-items: center;
     flex-shrink:0;
-    padding-left:20px;
+    padding-left:5px;
+    padding-right: 1%;
 }
 .brand-name{
     width:auto;
@@ -87,25 +92,15 @@ header{
 /*the right section of the header*/
 .right-section{
     display:flex;
-    flex-wrap: wrap;
-    flex:300px;
-    align-items: flex-end;
-    justify-content: space-around;
-    padding-right: 50px;
+    align-items:center;
+    justify-content:flex-end;
+   
+    width:180px;
+    flex-shrink: 0;
 }
-.hot-deal{
-    margin-right:50px;
-}
-.hot-deals-icon{
-    width:90px;
-    margin-left:10px;
-    transition:all 0.5s;
-    
-}
-.hot-deals-icon:hover{
-    opacity:50%;
-    cursor:pointer;
-    
+
+.button-container{
+    margin:2%;
 }
 .cart-icon{
     width:100%; 
@@ -141,7 +136,7 @@ header{
 
 /*the navigational pannel*/
 
-.main-nav{
+/* .main-nav{
     background-color:#17B890 ;
     position:fixed;
     left:0;
@@ -154,6 +149,7 @@ header{
     font-weight:600;
     font-size: large;
     width:100%;
+    margin-bottom:0;
 }
 .sub-nav{
     list-style-type: none;
@@ -163,8 +159,8 @@ header{
 .sub-nav a{
     display:block;
     text-decoration:none;
-    padding-right:50px;
-    padding-left:50px;
+    padding-right:5%;
+    padding-left:5%;
     margin-left:0;
     color:white;
 }
@@ -179,18 +175,44 @@ header{
 .sub-nav a:active{
     color:#dddddd;
     
+} */
+.top-nav-container{
+    background-color:#5ABFA6;
+    position:fixed;
+    left:0;
+    right:0;
+    top:100px;
+    overflow:hidden;
+    font-family:taviraj,sans-serif;
+    text-align: center;
+    
+    font-weight:600;
+    font-size: large;
+    width:100%;
+    margin-bottom:0;
 }
+.top-nav-container a{
+    float:left;
+    text-decoration:none;
+    padding:14px 16px;
+    color:white;
 
-/*media queries*/
-@media all and (max-width:1049px){
-    .brand-name{
-        font-size:larger;
-        color:blue;
-    }
-    .left-section{
-        padding-left:5px;
-    }
-    .sub-nav{
-        font-size:large;
-    }
+}
+.top-nav-container a.split-nav{
+    float: right;
+    background-color:#17B890;
+    color:white;
+}
+.top-nav-container a.split-nav:hover{
+    float: right;
+    background-color:#dddddd;
+    color:black;
+}
+.top-nav-container a:hover{
+    float:left;
+    text-decoration:none;
+    padding:14px 16px;
+    color:white;
+    background-color:#17B890;
+
 }
