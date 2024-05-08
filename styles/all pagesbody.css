@@ -218,10 +218,11 @@
     /* padding-left:10px; */
     margin:1rem;
     width:200px;
-    height:19em;
+    height:20em;
     background-color:#DEE5E5;
     border-radius:8px;
     transition:box-shadow 0.15s;
+    position:relative;
     
 }
 .product-container:hover{
@@ -229,27 +230,31 @@
 }
 .product-image{
     display:grid;
-    grid-template-rows: auto 100px 30px ;
+    grid-template-rows: auto 100px ;
     width:200px;
     background-color:#e4e5e8;                  
 }
 .product-text{
     display:grid;
-    grid-template-columns: 150px;
+    grid-template-columns: 1fr;
     column-gap: 5px;
-    width:150px;
+    width:200px;
     margin-left:auto;
     margin-right:auto;
 }
 .p-text{
-    width:100%;
-    font-size:small;
+    width:90%;
+    font-size:0.9rem;
     text-align:center;
     margin-bottom:0px;
+    margin-top:3%;
+    margin-right:auto;
+    margin-left:auto;
 
 }
 .light-text{
     text-align:center;
+    margin-top:1%;
     color:#17B890;
     margin-bottom: 0;
     
@@ -258,14 +263,15 @@
 .price{
     text-align:center;
     font-weight:bold;
-    padding-bottom:5px;
-    margin-bottom:0;
+    margin-bottom:1%;
     margin-top: 0;
 
     
 }
 .add-to-cart-button{
     width:200px;
+    position:absolute;
+    bottom: 0;
     
 
 }
@@ -676,24 +682,56 @@ tfoot{
 
 }
 .cosmatic-table1{
-    width:90%;
+    width:80%;
     margin-left:auto;
     margin-right:auto;
     padding-top:2%;
     
 }
+.cosmatic-table2{
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:2%;
+}
+.cosmatic-table3{
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:2%;
+}
+.cosmatic-table4{
+    width:40%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:2%;
+}
 #table-container{
     overflow: hidden;
 }
-@media all and (min-width:1380px){
-    
-    .cosmatic-table1{
+@media (min-width:1390px) {
+    .cosmatic-table1,.cosmatic-table2,.cosmatic-table3,.cosmatic-table4{
         display:none;
     }
-    
 }
-@media (min-width:992px) and (max-width:1379px){
-    .cosmatic-table{
+@media (min-width:1153px) and (max-width:1390px){
+    .cosmatic-table,.cosmatic-table2,.cosmatic-table3,.cosmatic-table4{
+        display:none;
+    }
+}
+@media (min-width:914px) and (max-width:1153px){
+    .cosmatic-table,.cosmatic-table1,.cosmatic-table3,.cosmatic-table4{
+        display:none;
+    }
+
+}
+@media (min-width:709px) and (max-width:914px){
+    .cosmatic-table,.cosmatic-table1,.cosmatic-table2,.cosmatic-table4{
+        display:none;
+    }
+}
+@media (max-width:709px){
+    .cosmatic-table,.cosmatic-table1,.cosmatic-table2,.cosmatic-table3{
         display:none;
     }
 }
