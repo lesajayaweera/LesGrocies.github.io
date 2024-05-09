@@ -62,14 +62,14 @@ header{
 /*the left section of the header*/
 .left-section{
     display:flex;
-    flex:1;
+    width:30%;
     align-items: center;
     flex-shrink:0;
     padding-left:5px;
     padding-right: 1%;
 }
 .brand-name{
-    width:auto;
+    width:80%;
     color:#17B890;
     font-family:"taviraj",sans-serif; 
     margin:0 0 0 10px;
@@ -136,46 +136,9 @@ header{
 
 /*the navigational pannel*/
 
-/* .main-nav{
-    background-color:#17B890 ;
-    position:fixed;
-    left:0;
-    right:0;
-    top:100px;
-    overflow:hidden;
-    font-family:taviraj,sans-serif;
-    text-align: center;
-    padding:10px 0 10px 0;
-    font-weight:600;
-    font-size: large;
-    width:100%;
-    margin-bottom:0;
-}
-.sub-nav{
-    list-style-type: none;
-    float:left;
-    margin: 0;
-}
-.sub-nav a{
-    display:block;
-    text-decoration:none;
-    padding-right:5%;
-    padding-left:5%;
-    margin-left:0;
-    color:white;
-}
 
-.sub-nav a:hover{
     
-    color:#DEE5E5;
-    border-color: #9DC5BB;
-    font-weight:bold;
 
-}
-.sub-nav a:active{
-    color:#dddddd;
-    
-} */
 .top-nav-container{
     background-color:#17B890;
     position:fixed;
