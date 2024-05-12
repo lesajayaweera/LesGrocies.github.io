@@ -5,6 +5,7 @@ header{
 }
 .main-header{
     background-color: #dddddd;
+    width:auto;
     height: 80px;
     display:flex;
     flex:300px 1 250px;
@@ -62,19 +63,19 @@ header{
 /*the left section of the header*/
 .left-section{
     display:flex;
-    width:30%;
+    width:40%;
     align-items: center;
     flex-shrink:0;
     padding-left:5px;
     padding-right: 1%;
 }
 .brand-name{
-    width:80%;
+    width:auto;
     color:#17B890;
     font-family:"taviraj",sans-serif; 
     margin:0 0 0 10px;
     font-weight:1000;
-    font-size:larger;
+    font-size:1.5rem;
     
 
  }
@@ -95,7 +96,7 @@ header{
     align-items:center;
     justify-content:flex-end;
    
-    width:180px;
+    width: 150px;
     flex-shrink: 0;
 }
 
@@ -144,20 +145,19 @@ header{
     position:fixed;
     left:0;
     right:0;
-    top:100px;
+    top:110px;
     overflow:hidden;
     font-family:taviraj,sans-serif;
     text-align: center;
-    
     font-weight:600;
-    font-size: large;
+    font-size: 1rem;
     width:100%;
     margin-bottom:0;
 }
 .top-nav-container a{
     float:left;
     text-decoration:none;
-    padding:14px 16px;
+    padding:14px ;
     color:white;
     transition: all 0.5s;
 
@@ -181,3 +181,26 @@ header{
     background-color:#5ABFA6;
 
 }
+@media (max-width:650px){
+    .left-section{
+        display:flex;
+        flex:1 ;
+    } 
+    
+    .logo-div{
+        margin-left: 10%;
+    }
+    
+    .top-nav-container a{
+        font-size: 0.82rem;
+    }
+    .brand-name{
+        display: none;
+    }
+    .top-nav-container{
+        width:100%;
+    }
+    .top-nav-container a.split-nav{
+        display:none;
+    }
+}  

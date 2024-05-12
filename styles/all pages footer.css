@@ -16,6 +16,7 @@
 }
 .brand-footer{
     display:flex;
+    width:auto;
     flex-direction: column;
     flex: 1 1 1 1;
     justify-content: space-between;
@@ -33,14 +34,19 @@
     margin-left:0;
 }
 .logo-footer-container{
-    display:grid;
-    grid-template-columns: 1fr 300px;
+    display:flex;
+    flex-direction: row;
 }
 .footer-description{
-    width:300px;
+    width:auto;
     font-size: small;
     margin-top:5px;
     
+}
+.footer-description1{
+    width:300px;
+    font-size: small;
+    margin-top:5px;
 }
 .location,.mail,.call{
     display:grid;
@@ -126,4 +132,16 @@
     text-align: center;
     font-size:small;
     margin-bottom:0;
+}
+@media (max-width:626px){
+    .logo-footer-container .logo-div{
+        margin-left:0;
+    }
+    .useful-links-header{
+        font-size: 1.5rem;
+        margin-top:10%;
+    }
+    .newsletter-footer{
+        margin-left:0;
+    }
 }

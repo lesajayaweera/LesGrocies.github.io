@@ -27,4 +27,8 @@ footer{
 nav{
     position:relative;
 }
-
+@media (max-width:626px){
+    body{
+        font-size:1rem;
+    }
+}
