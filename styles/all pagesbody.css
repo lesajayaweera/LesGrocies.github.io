@@ -765,6 +765,43 @@ tfoot{
     padding-top: 1%;
 
 }
+.mobile-form{
+    margin-top:2%;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.form label{
+    font-size:1.2rem;
+}
+@media (max-width:890px){
+    .form-container{
+        flex-direction:column;
+    }
+}
+.form input{
+    border:none;
+    height:40px;
+    font-size: 0.9rem;
+    border-radius:10px;
+    padding-left:10px;
+}
+.form-container{
+    display:flex;
+    column-gap: 10px;
+    width:50%;
+}
+.form{
+    display:flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-direction:column;
+    width:90%;
+
+}
+.form textarea{
+    height:100%;
+}
 @media all and (max-width:1280px){
     .loyalty-main-box{
         flex-direction: column;

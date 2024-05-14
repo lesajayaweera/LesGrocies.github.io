@@ -1,6 +1,5 @@
 .footer-container{
     display:flex;
-    flex-wrap:wrap;
     flex-direction:row;
     justify-content: space-evenly;
 }
@@ -38,7 +37,7 @@
     flex-direction: row;
 }
 .footer-description{
-    width:auto;
+    width:60%;
     font-size: small;
     margin-top:5px;
     
@@ -143,5 +142,8 @@
     }
     .newsletter-footer{
         margin-left:0;
+    }
+    .footer-container{
+        flex-wrap: wrap;
     }
 }
