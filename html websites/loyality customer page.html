@@ -154,21 +154,23 @@
                     <caption>Payment Methods and the Loyalty Pass</caption>
                     <fieldset>
                        <table>
-                        <tr>
-                            <td>Payment Method:</td>
-                            <td>Debit Card:<input type="radio" checked></td>
-                            <td>Credit card:<input type="radio"></td>
-                            <td>Cash:<input type="radio"></td>
-                           
-                        </tr>
-                        <tr>
-                            <td>Loyalty Program:</td>
-                            <td><select  required>
-                                <option>Preimium Pass</option>
-                                <option>Grand Pass</option>
-                                <option>Platinum Pass</option>
-                            </select></td>
-                        </tr>
+                            <tr>
+                                <td>Payment Method:</td>
+                                <td>Debit Card:<input type="radio" checked></td>
+                                <td>Credit card:<input type="radio"></td>
+                                <td>Cash:<input type="radio"></td>
+                            
+                            </tr>
+                            <tr>
+                                <td>Loyalty Program:</td>
+                                <td>
+                                    <select  required>
+                                        <option>Preimium Pass</option>
+                                        <option>Grand Pass</option>
+                                        <option>Platinum Pass</option>
+                                    </select>
+                                </td>
+                            </tr>
                        </table>
                        
                        
@@ -231,7 +233,24 @@
                             </div>
                             <div class="form">
                                 <label>Address</label>
-                                <textarea  class="mobile-text"></textarea>
+                                <textarea  class="mobile-text">Address</textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div  class="main-form-container">
+                            <div class="form">
+                                <label>Payment Methods</label>
+                                <select name="payment-methods" class="options">
+                                    <option>Debit card</option>
+                                    <option>Credit card</option>
+                                    <option>Cash</option>
+                                </select>
+                                    
+                                   
+                                    
+                                </div>
+                               
                             </div>
                         </div>
                     </fieldset>
@@ -251,7 +270,6 @@
                                 <input type="password" maxlength="20" required>
                             </div>
                         </div>
-                        
                     </feildset>
                 </form>
             </div>
