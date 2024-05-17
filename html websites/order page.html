@@ -63,10 +63,52 @@
             <section>
                 <div class="order-page-main-container">
                     <div><h2 class="cateogories-header">Order Confirmation Form</h2></div>
-                    <div>
-                        Product Name:<input type="text" required placeholder="Product Name"><br>
-                        Contact Number:<input type="tel" name="telno" size="10" maxlength="10" placeholder="Enter your conatct number" required><br>
-                        Email:<input type="email"  name="email" placeholder="email@example.com" required><br>
+                    <div class="order-box">
+                        <form>
+                            <fieldset>
+                                <legend>Order Details</legend>
+                                Product Cateogory: <select><option >Vegetables</option><option>Diary products</option><option>Cosmetics</option></select><br>
+                                Product Name:<input type="text" required placeholder="Product Name"><br>
+                                Quantity:(kg) <input type="number"><br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Customer information</legend>
+                                First name:<input type="text" maxlength="30"><br>
+                                Last Name:<input type="text" maxlength="30"><br>
+                                Contact Number:<input type="tel" name="telno" size="10" maxlength="10" placeholder="Enter your conatct number" required><br>
+                                Email:<input type="email"  name="email" placeholder="email@example.com" required><br>
+
+                            </fieldset> 
+                            <fieldset>
+                                <legend>Shipping Information</legend>
+                                Country:<select><option>Srilanka</option><option>China</option><option>India</option></select><br>
+                                Province:
+                                <select>
+                                    <option>Western</option>
+                                    <option value="">Northern</option>
+                                    <option value="">North Central</option>
+                                    <option value="">Eastern</option>
+                                    <option value="">Southern</option>
+                                    <option value="">Central</option>
+                                    <option value="">UVA</option>
+                                    <option value="">North western</option>
+                                    <option value="">Sabaragamuwa</option>
+                                </select><br>
+                                District:<input type="text"  maxlength="50"><br>
+                                City:<input type="text"  maxlength="50"><br>
+                                Street Address:<input type="text"  maxlength="50"><br>
+                                Postal code:<input type="number" maxlength="20"><br>
+
+                            </fieldset> 
+                            <fieldset>
+                                <legend>Payment method</legend>
+
+                            </fieldset> 
+                            
+                        </form>
+                        
+                        
+                        
                         
                             
                                 

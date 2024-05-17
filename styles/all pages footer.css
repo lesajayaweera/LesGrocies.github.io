@@ -85,7 +85,7 @@
 .social-media-container{
     display:grid;
     grid-template-columns: 40px 40px 40px 40px 40px;
-    column-gap: 20px;
+    column-gap:30px;
 
 
 }
@@ -146,4 +146,7 @@
     .footer-container{
         flex-wrap: wrap;
     }
+}
+.useful-links-footer{
+    padding-right:5%;
 }
