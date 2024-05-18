@@ -32,3 +32,13 @@ nav{
         font-size:1rem;
     }
 }
+legend{
+    font-weight: 700;
+    color:red;
+}
+fieldset{
+    border-color: black;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}

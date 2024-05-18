@@ -125,7 +125,8 @@
     background-color:#9DC5BB;
 }
 .email-input{
-    padding:5px ;   
+    padding:5px ;  
+    height:1rem 
 }
 .rights-footer{
     text-align: center;
