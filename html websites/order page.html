@@ -67,64 +67,57 @@
                         <form>
                             <fieldset>
                                 <legend>Order Details</legend>
-                                Product Cateogory: <br><select><option >Vegetables</option><option>Diary products</option><option>Cosmetics</option></select><br>
+                                Product Cateogory: <br><select required><option >Vegetables</option><option>Diary products</option><option>Cosmetics</option></select><br>
                                 Product Name:<br><input type="text" required placeholder="Product Name"><br>
-                                Quantity:(kg) <br> <input type="number"><br>
+                                Quantity:(kg) <br> <input type="number" required><br>
                             </fieldset>
                             <fieldset>
                                 <legend>Customer information</legend>
-                                First name:<br> <input type="text" maxlength="30"><br>
-                                Last Name: <br><input type="text" maxlength="30"><br>
+                                First name:<br> <input type="text" maxlength="30" required><br>
+                                Last Name: <br><input type="text" maxlength="30" required><br>
                                 Contact Number: <br><input type="tel" name="telno" size="10" maxlength="10" placeholder="Enter your conatct number" required><br>
                                 Email:<br><input type="email"  name="email" placeholder="email@example.com" required><br>
 
                             </fieldset> 
                             <fieldset>
                                 <legend>Shipping Information</legend>
-                                Country:<br><select><option>Srilanka</option><option>China</option><option>India</option></select><br>
+                                Country:<br><select required><option>Srilanka</option><option>China</option><option>India</option></select><br>
                                 Province:<br>
                                 <select>
                                     <option>Western</option>
-                                    <option value="">Northern</option>
-                                    <option value="">North Central</option>
-                                    <option value="">Eastern</option>
-                                    <option value="">Southern</option>
-                                    <option value="">Central</option>
-                                    <option value="">UVA</option>
-                                    <option value="">North western</option>
-                                    <option value="">Sabaragamuwa</option>
+                                    <option value="" required>Northern</option>
+                                    <option value="" required>North Central</option>
+                                    <option value="" required>Eastern</option>
+                                    <option value="" required>Southern</option>
+                                    <option value="" required>Central</option>
+                                    <option value="" required>UVA</option>
+                                    <option value="" required>North western</option>
+                                    <option value="" required>Sabaragamuwa</option>
                                 </select><br>
-                                District: <br><input type="text"  maxlength="50"><br>
-                                City: <br><input type="text"  maxlength="50"><br>
-                                Street Address: <br><input type="text"  maxlength="50"><br>
-                                Postal code:  <br><input type="number" maxlength="20"><br>
+                                District: <br><input type="text"  maxlength="50" required><br>
+                                City: <br><input type="text"  maxlength="50" required><br>
+                                Street Address: <br><input type="text"  maxlength="50" required><br>
+                                Postal code:  <br><input type="number" maxlength="20" required><br>
 
                             </fieldset> 
                             <fieldset>
                                 <legend>Payment method</legend>
-                                <div>
-                                    Debit card:
-                                    <input type="radio" ><br>
-                                    Credit Card:
-                                    <input type="radio"><br>
-                                    Cash:
-                                    <input type="radio"><br>
-                                    Google Pay:
-                                    <input type="radio"><br>
-                                    Apple Pay:
-                                    <input type="radio"><br>
-                                    PayPal:
-                                    <input type="radio"><br>
-
-                                </div>
+                                <select required>
+                                    <option>Debit Card</option>
+                                    <option>Credit Card</option>
+                                    <option>Cash</option>
+                                    <option>Google Pay</option>
+                                    <option>Apple Pay</option>
+                                    <option>PayPal</option>
+                                </select>
                                 <fieldset>
                                     <legend>Card Information</legend>
                                     Card Number:
-                                    <input type="number">
+                                    <input type="number" required>
                                     Date of Expiry:<br>
-                                    <input type="date"><br>
+                                    <input type="date" required><br>
                                     CVV :(MAX 4 Digit)
-                                    <input type="number" max="4">
+                                    <input type="number" max="4" required>
                                 </fieldset>
                                 <div id="payment-container">
                                     <p>We Accept:</p>
@@ -136,7 +129,10 @@
 
                             </fieldset> 
                             
+                            
+                            <div id="button-container"><input type="submit" value="place the order" class="subscribe-button1" ></div>
                         </form>
+                        
                     </div>
                 </div>
     

@@ -161,7 +161,25 @@
                                 <td>Debit Card:<input type="radio" checked></td>
                                 <td>Credit card:<input type="radio"></td>
                                 <td>Cash:<input type="radio"></td>
+                                <td>Paypal:<input type="radio"></td>
+                                <td>Google pay: <input type="radio"></td>
+                                <td>Apple Pay:<input type="radio"></td>
                             
+                            </tr>
+                            <tr>
+                                <fieldset>
+                                    <legend>Card Information</legend>
+                                    <label>Card Number:</label>
+                                    <input type="number">
+                                    <label>Date of Expiry:</label><br>
+                                    <input type="date"><br>
+                                    <label>CVV :(MAX 4 Digit)</label>
+                                    <input type="number" max="4">
+                                    <label>Paypal / Google Pay / Apple Pay :email:</label><br>
+                                    <input type="email"  name="email" placeholder="email@example.com" required><br>
+                                
+
+                                </fieldset>
                             </tr>
                             <tr>
                                 <td>Loyalty Program:</td>
@@ -178,7 +196,7 @@
                        
                     </fieldset>
                    
-                    <!-- <caption>UserName and Password</caption> -->
+                   
                     <fieldset>
                         <legend>Username and Password</legend>
                         <table>
@@ -207,71 +225,76 @@
                     </div>
                     
                 </form>
-                <form class="mobile-form">
-                    <fieldset>
-                        <div id="main-form-container">
-                            <div class="form-container">
-                                <div class="form">
-                                    <label>First Name</label>
-                                    <input type="text" size="50" maxlength="60" name="cfname" placeholder="Enter the First Name"  required>
+                <div class="mobile-form">
+                    <form >
+                        <fieldset>
+                            <legend>Customer Details</legend>
+                            <label>First Name</label><br>
+                            <input type="text" placeholder="First Name" maxlength="30"><br>
+                            <label>Last Name</label><br>
+                            <input type="text"  maxlength="60" name="cfname" placeholder="Enter the last Name"  required><br>
+                            <label>Contact No.</label><br>
+                            <input type="tel" name="telno" size="10" maxlength="10" placeholder="Enter your conatct number" required><br>
+                            <label>Email</label><br>
+                            <input type="email"  name="email" placeholder="email@example.com" required><br>
+                            <label> Birth Of Day</label><br>
+                            <input type="date" name="bmonth" required><br>     
+                            <label>Address</label><br>
+                            <textarea  class="mobile-text">Address</textarea> 
+                        </fieldset>
+                        <fieldset>
+                            <legend>Payment Methods</legend>
+                            <label>Loyalty Program:</label><br>
+                            <select  required>
+                                <option>Preimium Pass</option>
+                                <option>Grand Pass</option>
+                                <option>Platinum Pass</option>
+                            </select><br>
+                            <label>Payment Methods</label><br>
+                            <select name="payment-methods" class="options">
+                                <option>Debit card</option>
+                                <option>Credit card</option>
+                                <option>Cash</option>
+                                <option>paypal</option>
+                                <option>Google pay</option>
+                                <option>Apple pay</option>
+                            </select>
+                            <fieldset>
+                                <legend>Card Information</legend>
+                                <label>Card Number:</label>
+                                <input type="number">
+                                <label>Date of Expiry:</label><br>
+                                <input type="date"><br>
+                                <label>CVV :(MAX 4 Digit)</label>
+                                <input type="number" max="4">
+                                <label>Paypal / Google Pay / Apple Pay :email:</label><br>
+                                <input type="email"  name="email" placeholder="email@example.com" required><br>
+                            </fieldset>
+                            <div id="payment-container">
+                                <p>We Accept :</p>
+                                <div class="payment-buttons">
+                                    <img src="../images/body/order page/visa paypal mastercard collection.png" alt="payment methods" class="payment-images">
                                 </div>
-                                <div class="form">
-                                    <label>Last Name</label>
-                                    <input type="text" size="50" maxlength="60" name="cfname" placeholder="Enter the last Name"  required>
-                                </div>
-                            </div>
-                           <div class="form-container">
-                            <div class="form">
-                                <label>Contact No.</label>
-                                <input type="tel" name="telno" size="10" maxlength="10" placeholder="Enter your conatct number" required>
-                            </div>
-                            <div class="form">
-                                <label>Email</label>
-                                <input type="email"  name="email" placeholder="email@example.com" required>
-                            </div>
-                           </div>
-                            
-                            <div class="form">
-                                <label> Birth Of Day</label>
-                                <input type="date" name="bmonth" required>
-                            </div>
-                            <div class="form">
-                                <label>Address</label>
-                                <textarea  class="mobile-text">Address</textarea>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <div  class="main-form-container">
-                            <div class="form">
-                                <label>Payment Methods</label>
-                                <select name="payment-methods" class="options">
-                                    <option>Debit card</option>
-                                    <option>Credit card</option>
-                                    <option>Cash</option>
-                                </select>
-                            
-                            </div>
-                        </div>
-                    </fieldset>
-                    <feildset>
-                        <div class="main-form-container">
-                            <div class="form">
-                                <label>Username</label>
-                                <input type="text" maxlength="20" name="username" placeholder="User124" required>
-                            </div>
-                            <div class="form">
-                                <label>Password</label>
-                                <input type="password" maxlength="20" required>
                                 
                             </div>
-                            <div class="form">
-                                <label>Confirm Password</label>
-                                <input type="password" maxlength="20" required>
-                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Account password</legend>
+                            <label>Username</label><br>
+                            <input type="text" maxlength="20" name="username" placeholder="User124" required><br>
+                            <label>Password</label><br>
+                            <input type="password" maxlength="20" required><br>
+                            <label>Confirm Password</label><br>
+                            <input type="password" maxlength="20" required>
+                        </fieldset>
+                        <div id="button-container">
+                        
+                            <input type="submit" required vlaue="Submit" class="subscribe-button1">
+    
                         </div>
-                    </feildset>
-                </form>
+                    </form>
+                </div>
+               
             </div>
             
         </section>

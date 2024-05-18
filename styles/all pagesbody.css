@@ -831,49 +831,13 @@ tfoot{
     margin-left:auto;
     margin-right:auto;
 }
-.form label{
-    font-size:1.2rem;
-}
+
 @media (max-width:890px){
     .form-container{
         flex-direction:column;
     }
 }
-.form input{
-    border:none;
-    height:40px;
-    font-size: 0.9rem;
-    border-radius:10px;
-    padding-left:10px;
-}
-.form-container{
-    display:flex;
-    column-gap: 10px;
-    width:50%;
-}
-.form{
-    display:flex;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    flex-direction:column;
-    width:90%;
 
-}
-.form textarea{
-    height:50px;
-    width:50%;
-    resize:none;
-    font-size:1.2rem;
-    color:grey;
-    font-family: sans-serif;
-    padding:1%;
-    border-radius:4px;
-    
-}
-.options{
-    height:50px;
-    width:20%;
-}
 @media all and (max-width:1280px){
     .loyalty-main-box{
         flex-direction: column;
@@ -943,18 +907,30 @@ tfoot{
     margin-left:auto;
     margin-right:auto;
 }
+.registration-form input[type=text],.registration-form input[type=tel],.registration-form input[type=email],.registration-form input[type=password] ,.registration-form select,.registration-form input[type=date]{
+    width: 90%;
+    padding-top:12px;
+    padding-bottom: 12px;
+    border-radius: 4px;
+    border-style: none;
+    font-family: sans-serif;
+    font-size: large;
+    padding-left: 8px;
+}
 form table td{
     padding-bottom:2%;
  
 }
-
-fieldset{
-    margin-bottom: 2%;
+.mobile-form input[type=text],.mobile-form input[type=tel] ,.mobile-form input[type=email],.mobile-form input[type=date],.mobile-form textarea,.mobile-form select,.mobile-form input[type=password] {
+    width: 90%;
+    padding-top:12px;
+    padding-bottom: 12px;
+    border-radius: 4px;
+    border-style: none;
+    font-family: sans-serif;
+    font-size: large;
+    padding-left: 8px;
 }
-#feildset1 input{
-    width:90%;    
-}
-
 .subscribe-button1{
     width:10rem;
     background-color: #17B890;
@@ -1000,6 +976,7 @@ fieldset{
     border-radius: 10px;
     padding-bottom: 5%;
     padding-top: 5%;
+
 }
 .payment-buttons{
     width:50%;
@@ -1024,7 +1001,7 @@ fieldset{
     
 
 }
-.order-box input[type=text],input[type=number],input[type=tel],input[type=email],select{
+.order-box input[type=text],input[type=number],.order-box input[type=tel],.order-box input[type=email],.order-box select,.order-box input[type=date]{
     width: 100%;
     padding-top:12px;
     padding-bottom: 12px;
