@@ -621,7 +621,7 @@ tfoot{
     .service-table{
         font-size:2rem;
     }
-    
+}   
 @media (max-width:600px){
     .welcome-main-container{
         display:flex;
@@ -1002,7 +1002,7 @@ fieldset{
     padding-top: 5%;
 }
 .payment-buttons{
-    width:20%;
+    width:50%;
     
 
 }
