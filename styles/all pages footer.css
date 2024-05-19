@@ -85,7 +85,7 @@
 .social-media-container{
     display:grid;
     grid-template-columns: 40px 40px 40px 40px 40px;
-    column-gap:30px;
+    column-gap:20px;
 
 
 }
