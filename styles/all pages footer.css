@@ -18,11 +18,7 @@
     display:flex;
     width:100%;
     flex-direction: column;
-    /* flex: 1 1 1 1; */
     justify-content: space-between;
-    /*border-right-width:1px ;
-    border-right-style:solid ;
-    border-right-color: #17B890;*/
 }
 .brand-name-footer{
     width:200px;
@@ -82,6 +78,7 @@
     display:grid;
     grid-template-columns: 40px 40px 40px 40px 40px;
     column-gap:20px;
+    place-content: center;
 
 
 }
