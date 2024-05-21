@@ -1,12 +1,13 @@
 .footer-container{
-    display:flex;
-    flex-direction:row;
-    justify-content: space-evenly;
+   width:90%;
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   place-content: center;
+   margin-left: auto;
+   margin-right: auto;
 }
 .footer-main-container{
-    padding-top: 50px;;
-    margin-left:50px;
-    margin-right:50px;
+    padding-top: 5%;
     font-size: 1.5rem;
 }
 .logo-footer{
@@ -15,9 +16,9 @@
 }
 .brand-footer{
     display:flex;
-    width:auto;
+    width:100%;
     flex-direction: column;
-    flex: 1 1 1 1;
+    /* flex: 1 1 1 1; */
     justify-content: space-between;
     /*border-right-width:1px ;
     border-right-style:solid ;
@@ -29,7 +30,6 @@
     font-family:"taviraj",sans-serif; 
     margin:0 0 0 10px;
     font-weight:1000;
-    
     margin-left:0;
 }
 .logo-footer-container{
@@ -37,16 +37,12 @@
     flex-direction: row;
 }
 .footer-description{
-    width:60%;
-    font-size: small;
+    width:100%;
+    font-size: medium;
     margin-top:5px;
     
 }
-.footer-description1{
-    width:300px;
-    font-size: small;
-    margin-top:5px;
-}
+
 .location,.mail,.call{
     display:grid;
     grid-template-columns:30px 175px;
@@ -80,7 +76,7 @@
 .footer-list{
     text-decoration: none;
     color:black;
-    font-size:small;
+    font-size:medium;
 }
 .social-media-container{
     display:grid;
@@ -100,7 +96,9 @@
     opacity:0.7;
 }
 .newsletter-footer{
-    margin-left:50px;
+    width:80%;
+
+    
 }
 .subscribe-button{
     width:auto;
@@ -125,29 +123,53 @@
     background-color:#9DC5BB;
 }
 .email-input{
-    padding:5px ;  
-    height:1rem 
+    border-style:none;
+    padding-left:5px;
+    height:33px;
 }
 .rights-footer{
     text-align: center;
     font-size:small;
     margin-bottom:0;
 }
-@media (max-width:626px){
+@media   (min-width:360px) and (max-width:1000px){
     .logo-footer-container .logo-div{
         margin-left:0;
     }
     .useful-links-header{
         font-size: 1.5rem;
         margin-top:10%;
+        text-align: center;
     }
     .newsletter-footer{
         margin-left:0;
     }
     .footer-container{
+        display:flex;
+        flex:1;
         flex-wrap: wrap;
+
+    }
+    .brand-footer{
+        width:80%;
     }
 }
 .useful-links-footer{
-    padding-right:5%;
+    width:80%;
+}
+.footer-description1{
+    font-size: medium;
+}
+#input-button{
+    display:flex;
+    flex-direction: column;
+}
+@media (max-width:360px){
+    .brand-footer,.useful-links-footer,.newsletter-footer{
+        width:100%;
+        
+    }
+    .social-media-container{
+        padding-left: 2%;
+    }
 }

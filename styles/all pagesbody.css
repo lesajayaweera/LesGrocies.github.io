@@ -1,4 +1,7 @@
 /*homepage*/
+body{
+    width: 100%;
+}
 #banner-aboutus-main-container{
     display:flex;
     flex-direction: column;
@@ -7,7 +10,8 @@
     
 }
 #banner-container{
-    width:auto;
+    width:100%;
+    
 }
 #banner-image{
     width:100%;
@@ -322,14 +326,12 @@
     margin-right:0;
     width:90%;
 }
-.ul-list{
+/* .ul-list{
    margin-left:5%;
    margin-right:auto;
-}
+} */
 .ul-list li{
     padding-bottom:10px;
-    
-    font-size: 1.2rem;
 }
 .ul-list h3{
     margin-top:0;
@@ -506,8 +508,8 @@
     flex-direction:column;
     align-items: center;
     width:80%;
-    font-size:1.5rem;
-    border-width: 2%;
+    /* font-size:1.5rem; */
+    /* border-width: 2%; */
     margin-left:auto;
     margin-right:auto;
 }
@@ -568,7 +570,7 @@
 .service-table{
     width:100%;
     text-align: center;
-    font-size: 1rem;;
+    /* font-size: 1rem; */
 }
 tfoot{
     border-bottom-style: solid;
@@ -612,9 +614,9 @@ tfoot{
     .text-container{
         font-size:2rem;
     }
-    .location-map-text-images-container{
+    /* .location-map-text-images-container{
         flex-direction:column;
-    }
+    } */
     .location-image-container{
         align-items: center;
         margin-bottom:1%;

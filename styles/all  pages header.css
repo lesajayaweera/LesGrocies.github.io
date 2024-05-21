@@ -1,25 +1,20 @@
-
 /*the  heaader section*/
-header{
-    z-index:100;
-}
 .main-header{
-    background-color: #dddddd;
-    width:auto;
-    height: 80px;
     display:flex;
-    flex:300px 1 250px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position:fixed;
+    width:auto;
+    height: 80px;
     top:0;
     left:0px;
     right:0px; 
     padding:20px 0 20px 0;
-    position:fixed;
-    
+    background-color: #dddddd;
+    z-index:100;
 }
+
 /*the middle section of the header */
 .middle-section{
     display:flex;
@@ -27,45 +22,41 @@ header{
     align-items: center;
     max-width:50%;
     min-width: 1%;
-    
-
 }
 .search{
-    flex:1;
     display: flex;
+    flex:1;
+    font-family:sans-serif,arial;
     height:35px;
     font-size:14px;
-    font-family:sans-serif,arial;
+    max-width: 600px;
+    min-width:0;
     border-bottom-left-radius:6px;
     border-style:none;
     background-color:#F6F6E9;
     color:#9DC5BB;
-    max-width: 600px;
-    min-width:0;
-
-
 }
 .search-button{
     height:35px;
-    background-color:#9DC5BB;
     border:1px;
     border-top-right-radius: 20%;
     cursor:pointer;
+    background-color:#9DC5BB;
     transition:all 0.5s;
 }
 .search-button:hover{
-    background-color:#17B890;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
     border-width: 1px;
     border-color:#9DC5BB;
-    border-style:solid;    
+    border-style:solid; 
+    background-color:#17B890;   
 }
 /*the left section of the header*/
 .left-section{
     display:flex;
-    width:40%;
     align-items: center;
     flex-shrink:0;
+    width:40%;
     padding-left:5px;
     padding-right: 1%;
 }
@@ -76,8 +67,6 @@ header{
     margin:0 0 0 10px;
     font-weight:1000;
     font-size:1.5rem;
-    
-
  }
  .logo-span{
     color: black;
@@ -95,51 +84,40 @@ header{
     display:flex;
     align-items:center;
     justify-content:flex-end;
-   
-    width: 150px;
     flex-shrink: 0;
+    width: 150px;
 }
-
 .button-container{
     margin:2%;
 }
 .cart-icon{
     width:100%; 
-    
 }
 .login-icon{
     width:100%;
-   
 }
 .my-list-icon{
-    width:100%;
-    
+    width:100%;  
 }
 .all-button{
     height:40px;
     width:40px;
-    background-color:#9DC5BB;
     border:1px;
     cursor:pointer;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    background-color:#9DC5BB;
     transition:all 0.5s;
-    
 }
 .all-button:hover{
-    background-color:#17B890;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
     border-width: 1px;
     border-color:#9DC5BB;
-    border-style:solid;    
-
+    border-style:solid;   
+    background-color:#17B890; 
 }
 
 /*the navigational pannel*/
-
-
-    
-
 .top-nav-container{
     background-color:#17B890;
     position:fixed;
@@ -150,17 +128,14 @@ header{
     font-family:taviraj,sans-serif;
     text-align: center;
     font-weight:600;
-    font-size: 1rem;
-    width:100%;
     margin-bottom:0;
 }
 .top-nav-container a{
-    float:left;
+    float: left;
     text-decoration:none;
-    padding:14px ;
+    padding:14px;
     color:white;
     transition: all 0.5s;
-
 }
 .top-nav-container a.split-nav{
     float: right;
@@ -179,18 +154,15 @@ header{
     padding:14px 16px;
     color:black;
     background-color:#5ABFA6;
-
 }
 @media (max-width:650px){
     .left-section{
         display:flex;
         flex:1 ;
     } 
-    
     .logo-div{
         margin-left: 10%;
     }
-    
     .top-nav-container a{
         font-size: 0.82rem;
     }
@@ -203,4 +175,9 @@ header{
     .top-nav-container a.split-nav{
         display:none;
     }
-}  
+} 
+@media (max-width:360px){
+    .top-nav-container a{
+        padding:3%;
+    }
+} 
