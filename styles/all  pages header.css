@@ -176,7 +176,7 @@
         display:none;
     }
 } 
-@media (max-width:360px){
+@media (max-width:400px){
     .top-nav-container a{
         padding:3%;
     }
