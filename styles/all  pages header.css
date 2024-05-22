@@ -180,4 +180,7 @@
     .top-nav-container a{
         padding:3%;
     }
+    .top-nav-container a:hover{
+        padding:3%;
+    }
 } 
