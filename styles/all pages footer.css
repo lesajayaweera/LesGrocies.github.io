@@ -129,7 +129,7 @@
     font-size:small;
     margin-bottom:0;
 }
-@media   (min-width:360px) and (max-width:1000px){
+@media   (min-width:200px) and (max-width:1000px){
     .logo-footer-container .logo-div{
         margin-left:0;
     }
