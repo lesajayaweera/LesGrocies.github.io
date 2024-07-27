@@ -33,7 +33,7 @@ function updateThetable() {
     }" class="ProductImage"></td>
                   <td>${item.productName}</td>
                   <td>${item.quantity}</td>
-                  <td>Rs.${(item.price / 100).toFixed(2)}</td>
+                  <td>Rs.${((item.price * item.quantity) / 100).toFixed(2)}</td>
                 </tr>`;
 
     tbody.innerHTML += row; // Append the row to the tbody
