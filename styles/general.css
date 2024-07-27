@@ -1,3 +1,7 @@
+:root{
+    
+}
+
 body{
     margin:160px 0 0 0; 
     /* margin-left:0px;
@@ -6,7 +10,7 @@ body{
     margin-bottom:0; */
     background-color: #DEE5E5;
     font-family:sans-serif,taviraj;
-    font-size:1.2rem;
+    font-size:1.2rem !important;
     line-height: 1.6;
    
 }

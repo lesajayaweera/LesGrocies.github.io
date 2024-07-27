@@ -1,4 +1,4 @@
-/*the  heaader section*/
+ /*the  heaader section*/
 .main-header{
     display:flex;
     flex-direction: row;
@@ -22,6 +22,7 @@
     align-items: center;
     max-width:50%;
     min-width: 1%;
+    justify-content: center;
 }
 .search{
     display: flex;
