@@ -276,49 +276,271 @@ export const products = [
       price: 150000,
     },
   ],
-  // bakery products
+  // baking and cooking ingredients
   [
     {
-      image: "../images/product images/bakery/chicken hotdog.webp",
-      name: "Chicken Hotdog",
-      quantity: "Per 1 unit",
-      price: 10000,
-    },
-    {
-      image: "../images/product images/bakery/chocolate doughnut.webp",
-      name: "Chocolate Doughnut",
-      quantity: "Per 1 unit",
-      price: 5000,
-    },
-    {
-      image: "../images/product images/bakery/chcocolate kimbula bun.webp",
-      name: "Chocolate Kimbula Bun",
-      quantity: "Per 1 unit",
-      price: 7000,
-    },
-    {
-      image: "../images/product images/bakery/chocolate muffin.webp",
-      name: "Chocolate Muffin",
-      quantity: "Per 1 unit",
-      price: 6000,
-    },
-    {
-      image: "../images/product images/bakery/devilled chicken sub.webp",
-      name: "Devilled Chicken Sub",
+      image:
+        "../images/product images/baking and cooking/Motha  icing sugar 100g.webp",
+      name: "Motha icing sugar 100g",
       quantity: "Per 1 unit",
       price: 12000,
     },
     {
-      image: "../images/product images/bakery/egg & seenisambol bun.webp",
-      name: "Egg & Seenisambol Bun",
+      image:
+        "../images/product images/baking and cooking/Motha baking powder 100g.webp",
+      name: "Motha baking powder 100g",
+      quantity: "Per 1 unit",
+      price: 50000,
+    },
+    {
+      image:
+        "../images/product images/baking and cooking/Motha cocoa powder 100g.webp",
+      name: "Motha cocoa powder 100g",
+      quantity: "Per 1 unit",
+      price: 70000,
+    },
+    {
+      image:
+        "../images/product images/baking and cooking/Motha coloring red 28ml.webp",
+      name: "Motha coloring red 28ml",
+      quantity: "Per 1 unit",
+      price: 60000,
+    },
+    {
+      image:
+        "../images/product images/baking and cooking/Motha coloring yellow 28ml.webp",
+      name: "Motha coloring yellow 28ml",
+      quantity: "Per 1 unit",
+      price: 120000,
+    },
+    {
+      image:
+        "../images/product images/baking and cooking/Motha corn flour 100g.webp",
+      name: "Motha corn flour 100g",
       quantity: "Per 1 unit",
       price: 8000,
     },
     {
-      image: "../images/product images/bakery/fish bun.webp",
-      name: "Fish Bun",
+      image:
+        "../images/product images/baking and cooking/Motha gelatin 100g.webp",
+      name: "Motha gelatin 100g",
       quantity: "Per 1 unit",
-      price: 7000,
+      price: 70000,
     },
   ],
+  [
+    {
+      name: "Apple Green",
+      image: "../images/product images/Fruits/Apple Green.webp",
+      quantity: "Per 1Kg",
+      price: 50000,
+    },
+    {
+      name: "Apple Red",
+      image: "../images/product images/Fruits/Apple Red.webp",
+      quantity: "Per 1Kg",
+      price: 60000,
+    },
+    {
+      name: "Avacado",
+      image: "../images/product images/Fruits/Avacado.webp",
+      quantity: "Per 1Kg",
+      price: 70000,
+    },
+    {
+      name: "Banana Ambul",
+      image: "../images/product images/Fruits/Banana Ambul.webp",
+      quantity: "Per 1Kg",
+      price: 20000,
+    },
+    {
+      name: "Banana Seeni",
+      image: "../images/product images/Fruits/Banana seeni.webp",
+      quantity: "Per 1Kg",
+      price: 13000,
+    },
+    {
+      name: "Grapes Black",
+      image: "../images/product images/Fruits/Grapes Black.webp",
+      quantity: "Per 1Kg",
+      price: 100000,
+    },
+    {
+      name: "Grapes Red",
+      image: "../images/product images/Fruits/Grapes Red.webp",
+      quantity: "Per 1Kg",
+      price: 120000,
+    },
+    {
+      name: "Guava",
+      image: "../images/product images/Fruits/Guava.webp",
+      quantity: "Per 1Kg",
+      price: 60000,
+    },
+    {
+      name: "Mandarin imported oranges",
+      image: "../images/product images/Fruits/Mandarin imported oranges.webp",
+      quantity: "Per 1Kg",
+      price: 70000,
+    },
+    {
+      name: "orange imported",
+      image: "../images/product images/Fruits/orange imported.webp",
+      quantity: "Per 1Kg",
+      price: 50000,
+    },
+    {
+      name: "Pomegranate imported",
+      image: "../images/product images/Fruits/Pomegranate imported.webp",
+      quantity: "Per 1Kg",
+      price: 60000,
+    },
+    {
+      name: "Pineapple",
+      image: "../images/product images/Fruits/Pineapple.webp",
+      quantity: "Per 1Kg",
+      price: 60000,
+    },
+    {
+      name: "WaterMelon",
+      image: "../images/product images/Fruits/WaterMelon.webp",
+      quantity: "Per 1Kg",
+      price: 60000,
+    },
+  ],
+  // cosmetic products
+  [
+    {
+      name:"Aurica Alovera Face Wash 50Ml",
+      image:"../images/product images/homeware/household/Aurica Alovera Face Wash 50Ml.webp",
+      quantity: "Per 1 Unit",
+      price:12000,
+    },
+    {
+      name:"Aurica Under Eye Cream 15G",
+      image:"../images/product images/homeware/household/Aurica Under Eye Cream 15G.webp",
+      quantity: "Per 1 Unit",
+      price:400000,
+    },
+    {
+      name:"Ayush Face Cream Turmeric 50G",
+      image:"../images/product images/homeware/household/Ayush Face Cream Turmeric 50G.webp",
+      quantity: "Per 1 Unit",
+      price:100000,
+    },
+    {
+      name:"baby cheramy regular cream 50ml",
+      image:"../images/product images/homeware/household/baby cheramy regular cream 50ml.webp",
+      quantity: "Per 1 Unit",
+      price:400000,
+    },
+    {
+      name:"Dreamron Cleanser Cream Fair Plus Vitamin C 180Ml",
+      image:"../images/product images/homeware/household/Dreamron Cleanser Cream Fair Plus Vitamin C 180Ml.webp",
+      quantity: "Per 1 Unit",
+      price:400000,
+    },
+    {
+      name:"Earth Essence Herbal Sunburn Lotion 150Ml",
+      image:"../images/product images/homeware/household/Earth Essence Herbal Sunburn Lotion 150Ml.webp",
+      quantity: "Per 1 Unit",
+      price:400000,
+    },
+    {
+      name:"Glow & Lovely Face Gel Advance Multi Vitamin",
+      image:"../images/product images/homeware/household/Glow & Lovely Face Gel Advance Multi Vitamin.webp",
+      quantity: "Per 1 Unit",
+      price:400000,
+    },
+    {
+      name:"Glow & Lovely Face Wash Instant Glow 50G",
+      image:"../images/product images/homeware/household/Glow & Lovely Face Wash Instant Glow 50G.webp",
+      quantity: "Per 1 Unit",
+      price:400000,
+    },
+    {
+      name:"Lakme Absolute Hydra Pro Gel Cream 50G",
+      image:"../images/product images/homeware/household/Lakme Absolute Hydra Pro Gel Cream 50G.webp",
+      quantity: "Per 1 Unit",
+      price:400000,
+    },
+    {
+      name:"Lakme Absolute Perfect Radiance Serum 30Ml",
+      image:"../images/product images/homeware/household/Lakme Absolute Perfect Radiance Serum 30Ml.webp",
+      quantity: "Per 1 Unit",
+      price:400000,
+    },
+    {
+      name:"Luvesence Wild Strawberry Body Smoothie 100G",
+      image:"../images/product images/homeware/household/Luvesence Wild Strawberry Body Smoothie 100G.webp",
+      quantity: "Per 1 Unit",
+      price:400000,
+    },
+    {
+      name:"O'Nelle Face Gel Acne Control 30G",
+      image:"../images/product images/homeware/household/O'Nelle Face Gel Acne Control 30G.webp",
+      quantity: "Per 1 Unit",
+      price:400000,
+    },
+    {
+      name:"O'Nelle Toner Natural Rose Oil 1Ooml",
+      image:"../images/product images/homeware/household/O'Nelle Toner Natural Rose Oil 1Ooml.webp",
+      quantity: "Per 1 Unit",
+      price:400000,
+    },
+    {
+      name:"Ponds Face Wash Pimple Clear 50G",
+      image:"../images/product images/homeware/household/Ponds Face Wash Pimple Clear 50G.webp",
+      quantity: "Per 1 Unit",
+      price:400000,
+    },
+    {
+      name:"Ponds Face Wash Pure Detox 50G",
+      image:"../images/product images/homeware/household/Ponds Face Wash Pure Detox 50G.webp",
+      quantity: "Per 1 Unit",
+      price:400000,
+    },
+    {
+      name:"Prevense Gold Facial Mask 30ml",
+      image:"../images/product images/homeware/household/Prevense Gold Facial Mask 30ml.webp",
+      quantity: "Per 1 Unit",
+      price:400000,
+    },
+    {
+      name:"Prevense Herbal Ceylon Green Tea Face Mask 75G",
+      image:"../images/product images/homeware/household/Prevense Herbal Ceylon Green Tea Face Mask 75G.webp",
+      quantity: "Per 1 Unit",
+      price:400000,
+    },
+    {
+      name:"Prevense Serum Anti Acne Regulating 60Ml",
+      image:"../images/product images/homeware/household/Prevense Serum Anti Acne Regulating 60Ml.webp",
+      quantity: "Per 1 Unit",
+      price:400000,
+    },
+    {
+      name:"Vaseline Body Lotion Advanced Repair 400Ml",
+      image:"../images/product images/homeware/household/Vaseline Body Lotion Advanced Repair 400Ml.webp",
+      quantity: "Per 1 Unit",
+      price:400000,
+    },
+    {
+      name:"Vaseline Body Lotion Aloe Fresh 400Ml",
+      image:"../images/product images/homeware/household/Vaseline Body Lotion Aloe Fresh 400Ml.webp",
+      quantity: "Per 1 Unit",
+      price:400000,
+    },
+    {
+      name:"Vaseline Body Lotion Cocoa Glow 400Ml",
+      image:"../images/product images/homeware/household/Vaseline Body Lotion Cocoa Glow 400Ml.webp",
+      quantity: "Per 1 Unit",
+      price:400000,
+    },
+    {
+      name:"Vaseline Body Lotion Healthy Bright 400Ml",
+      image:"../images/product images/homeware/household/Vaseline Body Lotion Healthy Bright 400Ml.webp",
+      quantity: "Per 1 Unit",
+      price:400000,
+    },
+  ]
 ];

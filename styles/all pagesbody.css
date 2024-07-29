@@ -1001,6 +1001,7 @@ form table td{
     grid-template-columns: repeat(2,1fr);
     gap: 2rem;
     place-items: center;
+    
 }
 .orderCOntainer{
     display:flex;
@@ -1008,7 +1009,12 @@ form table td{
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100%;
+    width: 50%;
+    height: 200px;
+    
+    
+}
+#cateogories-header{
     
 }
 #orderImage{
@@ -1017,10 +1023,10 @@ form table td{
 }
 #orderTable{
     table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
+        /* border: 1px solid black; */
+        /* border-collapse: collapse; */
         padding: 10px;
-        text-align: left;
+        
     }
 }
 #imageContainer{
@@ -1039,7 +1045,50 @@ form table td{
 .ProductImage{
     width: 140px;
     height: 140px;
+    display: block;
+    margin: 0 auto;
 }
 #orderTable{
     width: 100%;
+    text-align: center;
+        tfoot{
+            font-weight: 700;
+            background-color: #17B890;
+        }
+        
+    
+    
 }
+#orderTable tr:nth-child(even){
+    background-color:#9DC5BB
+}
+#orderTable th{
+    background-color:#17B890;
+}
+#orderTable tr:hover{
+    background-color:#DEE5E5
+}
+
+#checkoutForm{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    text-align: center;
+    width: 90%;
+
+    input{
+        padding:4px 20px;
+        border:none;
+        border-radius: 4px;
+        width: 100%;
+
+    }
+  
+}
+.CheckoutSection{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+

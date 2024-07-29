@@ -2,6 +2,54 @@ import { products } from "./data/product.js";
  
 
 
+function pay() {
+  const form = document.getElementById("checkoutForm");
+  if (form.checkValidity()) {
+    alert(
+      "Thank you for your purchase! Your delivery date is " +
+        new Date(new Date().setDate(new Date().getDate() + 3)).toDateString()
+    );
+  } else {
+    alert("Please fill out all fields correctly.");
+  }
+}
+function Buy() {
+  // Get the cart from local storage and parse it as JSON
+  const cart = JSON.parse(localStorage.getItem("cart"));
+
+  // Set the current order in local storage
+  localStorage.setItem("currentOrder", JSON.stringify(cart));
+
+  // Get the current order from local storage and parse it as JSON
+  const currentOrder = JSON.parse(localStorage.getItem("currentOrder"));
+
+  // Initialize the total to 0
+  let total = 0;
+
+  // Loop through each item in the current order
+  currentOrder.forEach((item) => {
+    // Calculate the total by multiplying the price (converted to decimal) by the quantity
+    total += (item.price / 100) * item.quantity;
+  });
+
+  // Log the total to the console
+  console.log(total.toFixed(2)); // Use toFixed(2) to display the total with 2 decimal places
+
+  window.location.href ="checkout.html"
+  
+}
+
+function restFavourites(){
+  
+  localStorage.removeItem("favourites");
+  
+  window.alert("favourite is reseted");
+  resetCart();
+}
+function resetCart(){
+  localStorage.removeItem("cart");
+  window.alert("cart is reseted");
+}
 
 // Function to save the current cart to the "favourites" in local storage
 function saveToFavourites() {
@@ -12,6 +60,7 @@ function saveToFavourites() {
 // Function to retrieve the saved favourites from local storage and update the cart
 function getFromFavourites() {
   // Retrieve the JSON string from local storage under the key "favourites"
+  resetCart();
   // Parse the JSON string into a JavaScript object and assign it to the cart variable
   cart = JSON.parse(localStorage.getItem("favourites"));
   updateThetable(); // Update the table to reflect the current contents of the cart
@@ -203,6 +252,10 @@ function MainFunction() {
 const orderContainer = document.querySelectorAll(".orderContainer");
 const addFavouriteBtn = document.getElementById("addFavouriteBtn");
 const favouriteList = document.getElementById("favouriteList");
+const favouriteResetBtn = document.getElementById("favouriteReset");
+const Buybtn = document.getElementById("Buybtn");
+const checkoutbtn = document.getElementById("checkoutbtn");
+
 
 let cart = JSON.parse(localStorage.getItem("cart"));
 if (cart === null) {
@@ -211,7 +264,8 @@ if (cart === null) {
 MainFunction()
 addFavouriteBtn.addEventListener("click", saveToFavourites);
 favouriteList.addEventListener("click", getFromFavourites);
+favouriteResetBtn.addEventListener("click",restFavourites);
+Buybtn.addEventListener("click",Buy)
+checkoutbtn.addEventListener("click",pay)
 
-
-
-
+console.log(addFavouriteBtn);

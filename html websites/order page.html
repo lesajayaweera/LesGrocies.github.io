@@ -11,7 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+<script src="https://kit.fontawesome.com/4c8d9ef68f.js" crossorigin="anonymous"></script>
         <title>Grocies - Order</title>
     </head>
     <body>
@@ -31,24 +31,21 @@
                 </button>
             </div>
             <div  class="right-section">
-                <div class="button-container">
-                    <a href="order page.html">
-                        <button class="all-button"><img src="../images/header/list icon.png" alt="check list" title="My List" class=" my-list-icon"></button>
+               <div class="button-container">
+                    <a href="../html websites/order page.html">
+                        <button class="all-button"><i class="fa-solid fa-heart"></i></button>
                         
                     </a>
                 </div>
                 <div class="button-container">
-                    <a href="order page.html">
-                        <button class="all-button"><img src="../images/header/shopping cart icon.png" alt="shopping cart" title="total" class="cart-icon"></button>
+                    <a href="../html websites/order page.html">
+                        <button class="all-button"><i class="fa-solid fa-cart-shopping"></i></button>
                    </a>
                 </div>
                 <div class="button-container">
-                    <button class="all-button"><img src="../images/header/login icon.png" alt="login & signup" title="Login or Sign up" class="login-icon"></button>
-                </div>
-                
-                
-               
-            </div>  
+                    <button class="all-button"><i class="fa-solid fa-user"></i></button>
+                </div> 
+            </div>
             <nav>
                 <div class="top-nav-container">
                     <a href="../index.html">Home</a>
@@ -138,11 +135,13 @@
                 </div> -->
 
                 <section class="order-page-main-container">
+
+
+
+
                     <div class="orderContainer" id="vegeContainer">
                         <h2 id="cateogories-header">Vegetables</h2>
-                        <div id="ImageContainer">
-
-                        </div>
+                        <div id="ImageContainer"></div>
                         
                         <label for="Options">Product Name</label>
                         <select name="" id="Options" class="options">
@@ -182,23 +181,20 @@
                         <label for="FruitOptions">Product Name</label>
                         <select name="" id="Options" class="option">
                             <option value="hi">Select Product</option>
-                            <option value="Carrot">Carrot</option>
-                            <option value="Ash Plantain">Ash Plantain</option>
-                            <option value="Brinjals">Brinjals</option>
-                            <option value="Bell Pepper Green">Bell pepper Green</option>
-                            <option value="Big Onion Premium">Big Onion Premium</option>
-                            <option value="Capsicum">Capsicum</option>
-                            <option value="Cabbage Leaves">Cabbage Leaves</option>
-                            <option value="Bell Pepper Red">Bell Pepper Red</option>
-                            <option value="Amberella">Amberella</option>
-                            <option value="Green House Tomatoes">Green House Tomatoes</option>
-                            <option value="Iceberg ( Lettuce )">Iceberg ( Lettuce )</option>
-                            <option value="Parsley">Parsley</option>
-                            <option value="Salad Cucumber">Salad Cucumber</option>
-                            <option value="Ladies Fingers">Ladies Fingers</option>
-                            <option value="Cabbage">Cabbage</option>
-                            <option value="Long Beans">Long Beans</option>
-                            <option value="Plantain Flower">Plantain Flower</option>
+                            <option value="Apple Green">Apple Green</option>
+                            <option value="Apple Red">Apple Red</option>
+                            <option value="Guava">Guava</option>
+                            <option value="Banana Ambul">Banana Ambul</option>
+                            <option value="Banana Seeni">Banana Seeni</option>
+                            <option value="Avacado">Avacado</option>
+                            <option value="Grapes Black">Grapes Black</option>
+                            <option value="Grapes Red">Grapes Red</option>
+                            <option value="Mandarin imported oranges">Mandarin imported oranges</option>
+                            <option value="orange imported">orange imported</option>
+                            <option value="Pomegranate imported">Pomegranate imported</option>
+                            <option value="Pineapple">Pineapple</option>
+                            <option value="WaterMelon">WaterMelon</option>
+                            
                         </select><br>
                         <label for="Input">Quantity (kg)</label>
                         <input type="number" id="Input" name="" required min="1" value="1"><br>
@@ -229,16 +225,19 @@
                     </div>
                     <!-- Bakery products Container -->
                     <div class="orderContainer" id="bakeryContainer">
-                        <h2 id="cateogories-header">Bakery Products</h2>
+                        <h2 id="cateogories-header">Baking & Cooking Ingredients</h2>
                         <div id="ImageContainer"></div>
                         
                         <label for="bakeryOptions">Product Name</label>
                         <select name="" id="Options">
                             <option value="hi">Select Product</option>
-                            <option value="Chicken Hotdog">Chicken Hotdog</option>
-                            <option value="Chocolate Doughnut">Chocolate Doughnut</option>
-                            <option value="Chocolate Kimbula Bun">Chocolate Kimbula Bun</option>
-                            <option value="Chocolate Muffin">Bell pepper Green</option>
+                            <option value="Motha icing sugar 100g">Motha icing sugar 100g</option>
+                            <option value="Motha baking powder 100g">Motha baking powder 100g</option>
+                            <option value="Motha cocoa powder 100g">Motha cocoa powder 100g</option>
+                            <option value="Motha coloring red 28ml">Motha coloring red 28ml</option>
+                            <option value="Motha coloring yellow 28ml">Motha coloring yellow 28ml</option>
+                            <option value="Motha corn flour 100g">Motha corn flour 100g</option>
+                            <option value="Motha gelatin 100g">Motha gelatin 100g</option>
                             
                         </select><br>
                         <label for="Input">Quantity (kg)</label>
@@ -310,24 +309,28 @@
                         <label for="Options">Product Name</label>
                         <select name="" id="Options">
                             <option value="hi">Select Product</option>
-                            <option value="Carrot">Carrot</option>
-                            <option value="Ash Plantain">Ash Plantain</option>
-                            <option value="Brinjals">Brinjals</option>
-                            <option value="Bell Pepper Green">Bell pepper Green</option>
-                            <option value="Big Onion Premium">Big Onion Premium</option>
-                            <option value="Capsicum">Capsicum</option>
-                            <option value="Cabbage Leaves">Cabbage Leaves</option>
-                            <option value="Bell Pepper Red">Bell Pepper Red</option>
-                            <option value="Amberella">Amberella</option>
-                            <option value="Green House Tomatoes">Green House Tomatoes</option>
-                            <option value="Iceberg ( Lettuce )">Iceberg ( Lettuce )</option>
-                            <option value="Parsley">Parsley</option>
-                            <option value="Salad Cucumber">Salad Cucumber</option>
-                            <option value="Ladies Fingers">Ladies Fingers</option>
-                            <option value="Cabbage">Cabbage</option>
-                            <option value="Long Beans">Long Beans</option>
-                            <option value="Plantain Flower">Plantain Flower</option>
-                            <option value="vege19"></option>
+                            <option value="Aurica Alovera Face Wash 50Ml">Aurica Alovera Face Wash 50Ml</option>
+                            <option value="Aurica Under Eye Cream 15G">Aurica Under Eye Cream 15G</option>
+                            <option value="Ayush Face Cream Turmeric 50G">Ayush Face Cream Turmeric 50G</option>
+                            <option value="baby cheramy regular cream 50ml">baby cheramy regular cream 50ml</option>
+                            <option value="Dreamron Cleanser Cream Fair Plus Vitamin C 180Ml">Dreamron Cleanser Cream Fair Plus Vitamin C 180Ml</option>
+                            <option value="Earth Essence Herbal Sunburn Lotion 150Ml">Earth Essence Herbal Sunburn Lotion 150Ml</option>
+                            <option value="Glow & Lovely Face Gel Advance Multi Vitamin">Glow & Lovely Face Gel Advance Multi Vitamin</option>
+                            <option value="Glow & Lovely Face Wash Instant Glow 50G">Glow & Lovely Face Wash Instant Glow 50G</option>
+                            <option value="Lakme Absolute Hydra Pro Gel Cream 50G">Lakme Absolute Hydra Pro Gel Cream 50G</option>
+                            <option value="Lakme Absolute Perfect Radiance Serum 30Ml">Lakme Absolute Perfect Radiance Serum 30Ml</option>
+                            <option value="Luvesence Wild Strawberry Body Smoothie 100G">Luvesence Wild Strawberry Body Smoothie 100G</option>
+                            <option value="O'Nelle Face Gel Acne Control 30G">O'Nelle Face Gel Acne Control 30G</option>
+                            <option value="O'Nelle Toner Natural Rose Oil 1Ooml">O'Nelle Toner Natural Rose Oil 1Ooml</option>
+                            <option value="Ponds Face Wash Pimple Clear 50G">Ponds Face Wash Pimple Clear 50G</option>
+                            <option value="Ponds Face Wash Pure Detox 50G">Ponds Face Wash Pure Detox 50G</option>
+                            <option value="Prevense Gold Facial Mask 30ml">Prevense Gold Facial Mask 30ml</option>
+                            <option value="Prevense Herbal Ceylon Green Tea Face Mask 75G">Prevense Herbal Ceylon Green Tea Face Mask 75G</option>
+                            <option value="Prevense Serum Anti Acne Regulating 60Ml">Prevense Serum Anti Acne Regulating 60Ml</option>
+                            <option value="Vaseline Body Lotion Advanced Repair 400Ml">Vaseline Body Lotion Advanced Repair 400Ml</option>
+                            <option value="Vaseline Body Lotion Aloe Fresh 400Ml">Vaseline Body Lotion Aloe Fresh 400Ml</option>
+                            <option value="Vaseline Body Lotion Cocoa Glow 400Ml">Vaseline Body Lotion Cocoa Glow 400Ml</option>
+                            <option value="Vaseline Body Lotion Healthy Bright 400Ml">Vaseline Body Lotion Healthy Bright 400Ml</option>
                         </select><br>
                         <label for="Input">Quantity (kg)</label>
                         <input type="number" id="Input" name="" required min="1" value="1"><br>
@@ -359,7 +362,11 @@
 
                     <button id="addFavouriteBtn">ADD TO FAVOURITE</button>
                     <button id="favouriteList">GET FROM THE FAVOURITES</button>
-                    <button>BUY NOW</button>
+                    <button id="favouriteReset">RESET FAVOURITE</button>
+                    <button id="Buybtn">BUY NOW</button>
+                        
+                    
+                    
                 </section>
             
         </main>
