@@ -14,8 +14,8 @@ function pay() {
   }
 }
 function Buy() {
-  // Get the cart from local storage and parse it as JSON
-  const cart = JSON.parse(localStorage.getItem("cart"));
+  
+  
 
   // Set the current order in local storage
   localStorage.setItem("currentOrder", JSON.stringify(cart));
@@ -36,6 +36,8 @@ function Buy() {
   console.log(total.toFixed(2)); // Use toFixed(2) to display the total with 2 decimal places
 
   window.location.href ="checkout.html"
+  
+
   
 }
 
@@ -59,11 +61,8 @@ function saveToFavourites() {
 
 // Function to retrieve the saved favourites from local storage and update the cart
 function getFromFavourites() {
-  // Retrieve the JSON string from local storage under the key "favourites"
-  resetCart();
-  // Parse the JSON string into a JavaScript object and assign it to the cart variable
   cart = JSON.parse(localStorage.getItem("favourites"));
-  updateThetable(); // Update the table to reflect the current contents of the cart
+  updateThetable(cart); // Update the table to reflect the current contents of the cart
 }
 
 // Function to update the order table with the current cart contents and display the total price
@@ -91,6 +90,8 @@ function updateThetable() {
 
   // Update the total price display with the formatted total cost
   document.getElementById("totalPrice").innerHTML = ` Rs.${(Total / 100).toFixed(2)}`;
+  console.log("updated");
+
 }
 
 
@@ -183,7 +184,7 @@ function getThePrice(optionMenu, priceContainer, Input, setButton, orderButton, 
       }
 
       // Update the table to reflect the current cart contents
-      updateThetable();
+      updateThetable(cart);
       // Save the cart to storage (e.g., localStorage or server)
       saveStorage();
       console.log(cart);
@@ -262,7 +263,7 @@ if (cart === null) {
   cart = [];
 }
 MainFunction()
-addFavouriteBtn.addEventListener("click", saveToFavourites);
+addFavouriteBtn.onclick = saveToFavourites;
 favouriteList.addEventListener("click", getFromFavourites);
 favouriteResetBtn.addEventListener("click",restFavourites);
 Buybtn.addEventListener("click",Buy)
