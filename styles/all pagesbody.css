@@ -1001,6 +1001,8 @@ form table td{
     grid-template-columns: repeat(2,1fr);
     gap: 2rem;
     place-items: center;
+
+    
     
 }
 .orderCOntainer{
@@ -1011,6 +1013,10 @@ form table td{
     text-align: center;
     width: 50%;
     height: 200px;
+    background-color: #17B890;
+    section{
+        background-color: #17B890;
+    }
     
     
 }
@@ -1075,20 +1081,50 @@ form table td{
     place-items: center;
     text-align: center;
     width: 90%;
+    margin:0 auto;
+    gap:10px;
 
     input{
-        padding:4px 20px;
+        padding:4px 5%;
         border:none;
         border-radius: 4px;
-        width: 100%;
+        width: 90%;
+        background-color:white ;
+        border: 1px solid;
+        font-family: taviraj;
+        color: darkgreen;
 
     }
+    div{
+        justify-content: center;
+        width: 90%;
+        background-color: white;
+        border-radius: 8px;
+    }
   
+}
+.options{
+    width:200px;
+    padding:4px;
+    border: none;
+    font-family: taviraj;
 }
 .CheckoutSection{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    background-color:hsl(120, 100%, 98%) ;
 }
 
+@media (max-width:1255px){
+    #checkoutForm{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:818px){
+    #checkoutForm{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+}
