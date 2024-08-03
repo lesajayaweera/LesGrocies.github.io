@@ -38,7 +38,7 @@
                     </a>
                 </div>
                 <div class="button-container">
-                    <a href="../html websites/order page.html">
+                    <a href="#currentorder">
                         <button class="all-button"><i class="fa-solid fa-cart-shopping"></i></button>
                    </a>
                 </div>
@@ -59,81 +59,7 @@
         </header>
         <main>
             <section>
-                <!-- <div class="order-page-main-container">
-                    <div><h2 class="cateogories-header">Order Confirmation Form</h2></div>
-                    <div class="order-box">
-                        <form>
-                            <fieldset>
-                                <legend>Order Details</legend>
-                                Product Cateogory: <br><select required><option >Vegetables</option><option>Diary products</option><option>Cosmetics</option></select><br>
-                                Product Name:<br><input type="text" required placeholder="Product Name"><br>
-                                Quantity:(kg) <br> <input type="number" required><br>
-                            </fieldset>
-                            <fieldset>
-                                <legend>Customer information</legend>
-                                First name:<br> <input type="text" maxlength="30" required><br>
-                                Last Name: <br><input type="text" maxlength="30" required><br>
-                                Contact Number: <br><input type="tel" name="telno" size="10" maxlength="10" placeholder="Enter your conatct number" required><br>
-                                Email:<br><input type="email"  name="email" placeholder="email@example.com" required><br>
-
-                            </fieldset> 
-                            <fieldset>
-                                <legend>Shipping Information</legend>
-                                Country:<br><select required><option>Srilanka</option><option>China</option><option>India</option></select><br>
-                                Province:<br>
-                                <select>
-                                    <option>Western</option>
-                                    <option value="" required>Northern</option>
-                                    <option value="" required>North Central</option>
-                                    <option value="" required>Eastern</option>
-                                    <option value="" required>Southern</option>
-                                    <option value="" required>Central</option>
-                                    <option value="" required>UVA</option>
-                                    <option value="" required>North western</option>
-                                    <option value="" required>Sabaragamuwa</option>
-                                </select><br>
-                                District: <br><input type="text"  maxlength="50" required><br>
-                                City: <br><input type="text"  maxlength="50" required><br>
-                                Street Address: <br><input type="text"  maxlength="50" required><br>
-                                Postal code:  <br><input type="number" maxlength="20" required><br>
-
-                            </fieldset> 
-                            <fieldset>
-                                <legend>Payment method</legend>
-                                <select required>
-                                    <option>Debit Card</option>
-                                    <option>Credit Card</option>
-                                    <option>Cash</option>
-                                    <option>Google Pay</option>
-                                    <option>Apple Pay</option>
-                                    <option>PayPal</option>
-                                </select>
-                                <fieldset>
-                                    <legend>Card Information</legend>
-                                    Card Number:
-                                    <input type="number" required>
-                                    Date of Expiry:<br>
-                                    <input type="date" required><br>
-                                    CVV :(MAX 4 Digit)
-                                    <input type="number" max="4" required>
-                                </fieldset>
-                                <div id="payment-container">
-                                    <p>We Accept:</p>
-                                    <div class="payment-buttons">
-                                        <img src="../images/body/order page/visa paypal mastercard collection.png" alt="payment methods" class="payment-images">
-                                    </div>
-                                    
-                                </div>
-
-                            </fieldset> 
-                            
-                            
-                            <div id="button-container"><input type="submit" value="place the order" class="subscribe-button1" ></div>
-                        </form>
-                        
-                    </div>
-                </div> -->
-
+                <!-- Vegetable container -->
                 <section class="order-page-main-container">
                     <div class="orderContainer" id="vegeContainer">
                         
@@ -172,7 +98,6 @@
                             </tr>
                         </table>
                         <div id="priceContainer"></div>
-                        <button id="setButton">Set</button>
                         <Button id="orderButton" class="subscribe-button">Order Now</Button>
                     </div>
 
@@ -209,7 +134,6 @@
                             </tr>
                         </table>
                         <div id="priceContainer"></div>
-                        <button id="setButton" class="">Set</button>
                         <Button id="orderButton" class="subscribe-button">Order Now</Button>
                     </div>
                     <!-- dairy container -->
@@ -236,9 +160,8 @@
                                 <td><label for="Input">Quantity (kg)</label></td>
                                 <td><input type="number" id="Input" name="" required min="1" value="1" class="options"></td>
                             </tr>
-                        </table><br>
+                        </table>
                         <div id="priceContainer"></div>
-                        <button id="setButton">Set</button>
                         <Button id="orderButton" class="subscribe-button">Order Now</Button>
                     </div>
                     <!-- Bakery products Container -->
@@ -266,9 +189,8 @@
                                 <td><label for="Input">Quantity (kg)</label></td>
                                 <td><input type="number" id="Input" name="" required min="1" value="1" class="options"></td>
                             </tr>
-                        </table><br>
+                        </table>
                         <div id="priceContainer"></div>
-                        <button id="setButton">Set</button>
                         <Button id="orderButton" class="subscribe-button">Order Now</Button>
                     </div>
 
@@ -299,7 +221,6 @@
                             </tr>
                         </table>
                         <div id="priceContainer"></div>
-                        <button id="setButton">Set</button>
                         <Button id="orderButton" class="subscribe-button">Order Now</Button>
                     </div>
 
@@ -334,7 +255,6 @@
                             </tr>
                         </table>
                         <div id="priceContainer"></div>
-                        <button id="setButton">Set</button>
                         <Button id="orderButton" class="subscribe-button">Order Now</Button>
                     </div>
 
@@ -377,41 +297,38 @@
                                 <td><label for="Input">Quantity (kg)</label></td>
                                 <td><input type="number" id="Input" name="" required min="1" value="1" class="options"></td>
                             </tr>
-                        </table>   
+                        </table>
                         <div id="priceContainer"></div> <br>
-                        <button id="setButton">Set</button>
                         <Button id="orderButton" class="subscribe-button">Order Now</Button>
                     </div>
                 </section>
-                <section>
+                <section id="currentorder">
                     <h2>Current Order</h2>
-                    <table id="orderTable">
+                    <table id="orderTable" class="orderTable">
                         <thead>
                             <tr>
-                                <th>Image</th>
-                                <th>Item</th>
-                                <th>Quantity</th>
-                                <th>Price</th>
+                                <th class="col-1">Image</th>
+                                <th class="col-2">Item</th>
+                                <th class="col-3">Quantity</th>
+                                <th class="col-4">Price of 1 Unit or Kg</th>
+                                <th class="col-5">Cost</th>
                             </tr>
                         </thead>
                         <tbody>
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td colspan="3">Total</td>
+                                <td colspan="4" class="colspan">Total</td>
                                 <td id="totalPrice">0</td>
                             </tr>
                         </tfoot>
-                    </table>
+                    </table><br>
 
-                    <button id="addFavouriteBtn">ADD TO FAVOURITE</button>
-                    <button id="favouriteList">GET FROM THE FAVOURITES</button>
-                    <button id="favouriteReset">RESET FAVOURITE</button>
-                        <button id="Buybtn">BUY NOW</button>
-                        
-                    
-                    
-                </section>
+                    <button id="addFavouriteBtn" class="subscribe-button">ADD TO FAVOURITE</button>
+                    <button id="favouriteList" class="subscribe-button">GET FROM THE FAVOURITES</button>
+                    <button id="favouriteReset" class="subscribe-button">RESET FAVOURITE</button>
+                    <button id="Buybtn" class="subscribe-button">BUY NOW</button>
+            </section>
             
         </main>
         <footer>
@@ -509,6 +426,6 @@
             </div>
            
         </footer>
-        <script type="module" src="../scripts/main.js"></script>
+        <script type="module" src="../scripts/Orderpage.js"></script>
     </body>
 </html>

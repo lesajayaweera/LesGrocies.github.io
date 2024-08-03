@@ -49,3 +49,7 @@ fieldset{
     margin-right: auto;
     margin-bottom: 2%;
 }
+input:focus, select:focus{
+        outline: none;
+        border: 1px solid darkgreen;    
+    }

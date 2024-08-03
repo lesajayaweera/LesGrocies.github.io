@@ -613,7 +613,12 @@ tfoot{
         border-radius: 10px;
     }
 }
-
+@media (min-width:700px){
+    .welcome-main-container{
+        display:flex;
+        flex-direction: column-reverse;
+    }
+}
 
 
 /*vegetable product page*/
@@ -999,26 +1004,33 @@ form table td{
 .order-page-main-container{
     display:grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 2rem;
+    
     place-items: center;
+    background-color: hsla(0, 0%, 100%, 0.766);
+    padding:2rem
 
     
     
 }
-.orderCOntainer{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+
+.orderContainer{
+    margin-top: 2rem;
+    display:grid;
+    grid-template-rows: 120px 150px 150px 50px ;
     text-align: center;
-    width: 50%;
-    height: 200px;
-    background-color: #17B890;
-    section{
-        background-color: #17B890;
+    width: 90%;
+    background-color:hsl(165, 26%, 90%);
+    border-radius: 8px;
+    transition: all 0.5s;
+    table{
+        width:80%;
+        margin: 0 auto;
     }
-    
-    
+   
+}
+.orderContainer:hover{
+    background-color:hsl(165, 26%, 70%) ;
 }
 #cateogories-header{
     
@@ -1027,7 +1039,7 @@ form table td{
     display:block;
 
 }
-#orderTable{
+.orderTable{
     table, th, td {
         /* border: 1px solid black; */
         /* border-collapse: collapse; */
@@ -1053,8 +1065,10 @@ form table td{
     height: 140px;
     display: block;
     margin: 0 auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
-#orderTable{
+.orderTable{
     width: 100%;
     text-align: center;
         tfoot{
@@ -1065,13 +1079,13 @@ form table td{
     
     
 }
-#orderTable tr:nth-child(even){
+.orderTable tr:nth-child(even){
     background-color:#9DC5BB
 }
-#orderTable th{
+.orderTable th{
     background-color:#17B890;
 }
-#orderTable tr:hover{
+.orderTable tr:hover{
     background-color:#DEE5E5
 }
 
@@ -1095,6 +1109,7 @@ form table td{
         color: darkgreen;
 
     }
+   
     div{
         justify-content: center;
         width: 90%;
@@ -1107,7 +1122,8 @@ form table td{
     width:200px;
     padding:4px;
     border: none;
-    font-family: taviraj;
+    font-family: taviraj, sans-serif;
+    border-radius: 8px;
 }
 .CheckoutSection{
     display: flex;
@@ -1121,10 +1137,29 @@ form table td{
     #checkoutForm{
         grid-template-columns: repeat(2,1fr);
     }
+    .order-page-main-container{
+        grid-template-columns: repeat(3,1fr);
+    }
 }
-@media (max-width:818px){
+@media (max-width:1070px){
     #checkoutForm{
         grid-template-columns: repeat(1,1fr);
         
+    }
+    .order-page-main-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+@media (max-width:818px){
+    .order-page-main-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .col-4{
+        display:none;
+
+    }
+    .col-1{
+        display: none;
     }
 }
