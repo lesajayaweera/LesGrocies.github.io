@@ -26,6 +26,12 @@ export const products = [
       image: "../images/product images/fresh/vegetables/bell peper green.webp",
     },
     {
+      name: "Capsicum",
+      price: 25000,
+      quantity: "Per 1Kg",
+      image: "../images/product images/fresh/vegetables/capsicum.webp",
+    },
+    {
       name: "Big Onion Premium",
       price: 7500,
       quantity: "Per 1Kg",
@@ -411,136 +417,158 @@ export const products = [
   // cosmetic products
   [
     {
-      name:"Aurica Alovera Face Wash 50Ml",
-      image:"../images/product images/homeware/household/Aurica Alovera Face Wash 50Ml.webp",
+      name: "Aurica Alovera Face Wash 50Ml",
+      image:
+        "../images/product images/homeware/household/Aurica Alovera Face Wash 50Ml.webp",
       quantity: "Per 1 Unit",
-      price:12000,
+      price: 12000,
     },
     {
-      name:"Aurica Under Eye Cream 15G",
-      image:"../images/product images/homeware/household/Aurica Under Eye Cream 15G.webp",
+      name: "Aurica Under Eye Cream 15G",
+      image:
+        "../images/product images/homeware/household/Aurica Under Eye Cream 15G.webp",
       quantity: "Per 1 Unit",
-      price:400000,
+      price: 400000,
     },
     {
-      name:"Ayush Face Cream Turmeric 50G",
-      image:"../images/product images/homeware/household/Ayush Face Cream Turmeric 50G.webp",
+      name: "Ayush Face Cream Turmeric 50G",
+      image:
+        "../images/product images/homeware/household/Ayush Face Cream Turmeric 50G.webp",
       quantity: "Per 1 Unit",
-      price:100000,
+      price: 100000,
     },
     {
-      name:"baby cheramy regular cream 50ml",
-      image:"../images/product images/homeware/household/baby cheramy regular cream 50ml.webp",
+      name: "baby cheramy regular cream 50ml",
+      image:
+        "../images/product images/homeware/household/baby cheramy regular cream 50ml.webp",
       quantity: "Per 1 Unit",
-      price:400000,
+      price: 400000,
     },
     {
-      name:"Dreamron Cleanser Cream Fair Plus Vitamin C 180Ml",
-      image:"../images/product images/homeware/household/Dreamron Cleanser Cream Fair Plus Vitamin C 180Ml.webp",
+      name: "Dreamron Cleanser Cream Fair Plus Vitamin C 180Ml",
+      image:
+        "../images/product images/homeware/household/Dreamron Cleanser Cream Fair Plus Vitamin C 180Ml.webp",
       quantity: "Per 1 Unit",
-      price:400000,
+      price: 400000,
     },
     {
-      name:"Earth Essence Herbal Sunburn Lotion 150Ml",
-      image:"../images/product images/homeware/household/Earth Essence Herbal Sunburn Lotion 150Ml.webp",
+      name: "Earth Essence Herbal Sunburn Lotion 150Ml",
+      image:
+        "../images/product images/homeware/household/Earth Essence Herbal Sunburn Lotion 150Ml.webp",
       quantity: "Per 1 Unit",
-      price:400000,
+      price: 400000,
     },
     {
-      name:"Glow & Lovely Face Gel Advance Multi Vitamin",
-      image:"../images/product images/homeware/household/Glow & Lovely Face Gel Advance Multi Vitamin.webp",
+      name: "Glow & Lovely Face Gel Advance Multi Vitamin",
+      image:
+        "../images/product images/homeware/household/Glow & Lovely Face Gel Advance Multi Vitamin.webp",
       quantity: "Per 1 Unit",
-      price:400000,
+      price: 400000,
     },
     {
-      name:"Glow & Lovely Face Wash Instant Glow 50G",
-      image:"../images/product images/homeware/household/Glow & Lovely Face Wash Instant Glow 50G.webp",
+      name: "Glow & Lovely Face Wash Instant Glow 50G",
+      image:
+        "../images/product images/homeware/household/Glow & Lovely Face Wash Instant Glow 50G.webp",
       quantity: "Per 1 Unit",
-      price:400000,
+      price: 400000,
     },
     {
-      name:"Lakme Absolute Hydra Pro Gel Cream 50G",
-      image:"../images/product images/homeware/household/Lakme Absolute Hydra Pro Gel Cream 50G.webp",
+      name: "Lakme Absolute Hydra Pro Gel Cream 50G",
+      image:
+        "../images/product images/homeware/household/Lakme Absolute Hydra Pro Gel Cream 50G.webp",
       quantity: "Per 1 Unit",
-      price:400000,
+      price: 400000,
     },
     {
-      name:"Lakme Absolute Perfect Radiance Serum 30Ml",
-      image:"../images/product images/homeware/household/Lakme Absolute Perfect Radiance Serum 30Ml.webp",
+      name: "Lakme Absolute Perfect Radiance Serum 30Ml",
+      image:
+        "../images/product images/homeware/household/Lakme Absolute Perfect Radiance Serum 30Ml.webp",
       quantity: "Per 1 Unit",
-      price:400000,
+      price: 400000,
     },
     {
-      name:"Luvesence Wild Strawberry Body Smoothie 100G",
-      image:"../images/product images/homeware/household/Luvesence Wild Strawberry Body Smoothie 100G.webp",
+      name: "Luvesence Wild Strawberry Body Smoothie 100G",
+      image:
+        "../images/product images/homeware/household/Luvesence Wild Strawberry Body Smoothie 100G.webp",
       quantity: "Per 1 Unit",
-      price:400000,
+      price: 400000,
     },
     {
-      name:"O'Nelle Face Gel Acne Control 30G",
-      image:"../images/product images/homeware/household/O'Nelle Face Gel Acne Control 30G.webp",
+      name: "O'Nelle Face Gel Acne Control 30G",
+      image:
+        "../images/product images/homeware/household/O'Nelle Face Gel Acne Control 30G.webp",
       quantity: "Per 1 Unit",
-      price:400000,
+      price: 400000,
     },
     {
-      name:"O'Nelle Toner Natural Rose Oil 1Ooml",
-      image:"../images/product images/homeware/household/O'Nelle Toner Natural Rose Oil 1Ooml.webp",
+      name: "O'Nelle Toner Natural Rose Oil 1Ooml",
+      image:
+        "../images/product images/homeware/household/O'Nelle Toner Natural Rose Oil 1Ooml.webp",
       quantity: "Per 1 Unit",
-      price:400000,
+      price: 400000,
     },
     {
-      name:"Ponds Face Wash Pimple Clear 50G",
-      image:"../images/product images/homeware/household/Ponds Face Wash Pimple Clear 50G.webp",
+      name: "Ponds Face Wash Pimple Clear 50G",
+      image:
+        "../images/product images/homeware/household/Ponds Face Wash Pimple Clear 50G.webp",
       quantity: "Per 1 Unit",
-      price:400000,
+      price: 400000,
     },
     {
-      name:"Ponds Face Wash Pure Detox 50G",
-      image:"../images/product images/homeware/household/Ponds Face Wash Pure Detox 50G.webp",
+      name: "Ponds Face Wash Pure Detox 50G",
+      image:
+        "../images/product images/homeware/household/Ponds Face Wash Pure Detox 50G.webp",
       quantity: "Per 1 Unit",
-      price:400000,
+      price: 400000,
     },
     {
-      name:"Prevense Gold Facial Mask 30ml",
-      image:"../images/product images/homeware/household/Prevense Gold Facial Mask 30ml.webp",
+      name: "Prevense Gold Facial Mask 30ml",
+      image:
+        "../images/product images/homeware/household/Prevense Gold Facial Mask 30ml.webp",
       quantity: "Per 1 Unit",
-      price:400000,
+      price: 400000,
     },
     {
-      name:"Prevense Herbal Ceylon Green Tea Face Mask 75G",
-      image:"../images/product images/homeware/household/Prevense Herbal Ceylon Green Tea Face Mask 75G.webp",
+      name: "Prevense Herbal Ceylon Green Tea Face Mask 75G",
+      image:
+        "../images/product images/homeware/household/Prevense Herbal Ceylon Green Tea Face Mask 75G.webp",
       quantity: "Per 1 Unit",
-      price:400000,
+      price: 400000,
     },
     {
-      name:"Prevense Serum Anti Acne Regulating 60Ml",
-      image:"../images/product images/homeware/household/Prevense Serum Anti Acne Regulating 60Ml.webp",
+      name: "Prevense Serum Anti Acne Regulating 60Ml",
+      image:
+        "../images/product images/homeware/household/Prevense Serum Anti Acne Regulating 60Ml.webp",
       quantity: "Per 1 Unit",
-      price:400000,
+      price: 400000,
     },
     {
-      name:"Vaseline Body Lotion Advanced Repair 400Ml",
-      image:"../images/product images/homeware/household/Vaseline Body Lotion Advanced Repair 400Ml.webp",
+      name: "Vaseline Body Lotion Advanced Repair 400Ml",
+      image:
+        "../images/product images/homeware/household/Vaseline Body Lotion Advanced Repair 400Ml.webp",
       quantity: "Per 1 Unit",
-      price:400000,
+      price: 400000,
     },
     {
-      name:"Vaseline Body Lotion Aloe Fresh 400Ml",
-      image:"../images/product images/homeware/household/Vaseline Body Lotion Aloe Fresh 400Ml.webp",
+      name: "Vaseline Body Lotion Aloe Fresh 400Ml",
+      image:
+        "../images/product images/homeware/household/Vaseline Body Lotion Aloe Fresh 400Ml.webp",
       quantity: "Per 1 Unit",
-      price:400000,
+      price: 400000,
     },
     {
-      name:"Vaseline Body Lotion Cocoa Glow 400Ml",
-      image:"../images/product images/homeware/household/Vaseline Body Lotion Cocoa Glow 400Ml.webp",
+      name: "Vaseline Body Lotion Cocoa Glow 400Ml",
+      image:
+        "../images/product images/homeware/household/Vaseline Body Lotion Cocoa Glow 400Ml.webp",
       quantity: "Per 1 Unit",
-      price:400000,
+      price: 400000,
     },
     {
-      name:"Vaseline Body Lotion Healthy Bright 400Ml",
-      image:"../images/product images/homeware/household/Vaseline Body Lotion Healthy Bright 400Ml.webp",
+      name: "Vaseline Body Lotion Healthy Bright 400Ml",
+      image:
+        "../images/product images/homeware/household/Vaseline Body Lotion Healthy Bright 400Ml.webp",
       quantity: "Per 1 Unit",
-      price:400000,
+      price: 400000,
     },
-  ]
+  ],
 ];
