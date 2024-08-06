@@ -35,7 +35,7 @@ function UpdateOrderTable() { // function to   update order table in the checkou
                       2
                     )}</td>
                 </tr>`;
-    tableBody.innerHTML += row;
+    tableBody.innerHTML += row; 
   });
   document.getElementById("totalPrice").innerHTML = `Rs.${(Total / 100).toFixed(
     2

@@ -96,18 +96,23 @@ function getThePrice(optionMenu, priceContainer, Input) {
     // Update the cost dynamically based on input
     Input.addEventListener("input", () => {
       InputValue = Input.value;
-      let priceHTML = "";
+      if (InputValue >= 1){
+        let priceHTML = "";
 
-      products.forEach((category) => {
-        category.forEach((product) => {
-          if (selectedOption === product.name) {
-            const quantity = Number(InputValue);
-            const price = product.price * quantity;
-            priceHTML = ` Cost :  Rs. ${(price / 100).toFixed(2)}`;
-            priceContainer.innerHTML = priceHTML;
-          }
+        products.forEach((category) => {
+          category.forEach((product) => {
+            if (selectedOption === product.name) {
+              const quantity = Number(InputValue);
+              const price = product.price * quantity;
+              priceHTML = ` Cost :  Rs. ${(price / 100).toFixed(2)}`;
+              priceContainer.innerHTML = priceHTML;
+            }
+          });
         });
-      });
+      }else{
+        alert(`Invalid quantity for item`);
+      }
+      
     });
   });
 }
@@ -121,33 +126,44 @@ function addOrderButtonListener(orderButton) {
       .closest(".orderContainer")
       .querySelector("#Input");
     const selectedOption = optionMenu.value;
-    let productExists = false;
+    if (selectedOption === 'hi'){
+      alert('Please select an option');
+    }
+    else{
+      if (Input.value > 0) {
+        let productExists = false;
 
-    cart.forEach((item) => {
-      if (item.productName === selectedOption) {
-        item.quantity += Number(Input.value);
-        productExists = true;
-      }
-    });
-
-    if (!productExists) {
-      products.forEach((category) => {
-        category.forEach((product) => {
-          if (selectedOption === product.name) {
-            cart.push({
-              productName: product.name,
-              quantity: Number(Input.value),
-              price: product.price,
-              image: product.image,
-              type: product.quantity,
-            });
+        cart.forEach((item) => {
+          if (item.productName === selectedOption) {
+            item.quantity += Number(Input.value);
+            productExists = true;
           }
         });
-      });
-    }
 
-    updateThetable();
-    saveStorage();
+        if (!productExists) {
+          products.forEach((category) => {
+            category.forEach((product) => {
+              if (selectedOption === product.name) {
+                cart.push({
+                  productName: product.name,
+                  quantity: Number(Input.value),
+                  price: product.price,
+                  image: product.image,
+                  type: product.quantity,
+                });
+              }
+            });
+          });
+        }
+
+        updateThetable();
+        saveStorage();
+      } else {
+        alert(`no zeros`);
+      }
+
+    }
+        
     
   });
 }
