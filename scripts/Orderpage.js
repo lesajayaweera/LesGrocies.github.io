@@ -26,10 +26,12 @@ function adjustColspan() {
 function restFavourites() {
   localStorage.removeItem("favourites");
   window.alert("favourite is reseted");
+
   resetCart();
 }
 function resetCart() {
   localStorage.removeItem("cart");
+  localStorage.removeItem("currentOrder");
   window.alert("cart is reseted");
 }
 
@@ -186,6 +188,7 @@ function getTheimage(optionMenue, imageContainer) {
 }
 
 function MainFunction() {
+  
   orderContainer.forEach((container) => {
     const optionMenue = container.querySelector("#Options");
     const imageContainer = container.querySelector("#ImageContainer");
@@ -207,11 +210,14 @@ const favouriteList = document.getElementById("favouriteList");
 const favouriteResetBtn = document.getElementById("favouriteReset");
 const Buybtn = document.getElementById("Buybtn");
 
-
+window.addEventListener("load", restFavourites);
 let cart = JSON.parse(localStorage.getItem("cart"));
 if (cart === null) {
   cart = [];
 }
+console.log(cart);
+
+
 
 MainFunction();
 
