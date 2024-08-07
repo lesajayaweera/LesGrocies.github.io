@@ -8,7 +8,7 @@ fruits.forEach((foods) => {
   <div class="product-container">
     <div class="product-image">
       <div class="p-image">
-        <img class="p-images" src="${foods.image}">
+        <img class="p-images" src="${foods.image}" alt="${foods.name}">
       </div>
       <div class="product-text">
         <p class="p-text">${foods.name}</p>
@@ -27,5 +27,5 @@ fruits.forEach((foods) => {
 console.log(fruitsHtml);
 console.log(document.getElementById("FruitsContainer"));
 
-// Use innerHTML instead of innerHtml
+
 document.getElementById("FruitsContainer").innerHTML = fruitsHtml;

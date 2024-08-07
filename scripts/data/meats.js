@@ -16,7 +16,7 @@ meats.forEach((food) => {
   <div class="product-container" >
     <div class="product-image">
       <div class="p-image">
-        <img class="p-images" src="${food.image}">
+        <img class="p-images" src="${food.image}" alt="${food.name}">
       </div>
       <div class="product-text">
         <p  class="p-text">${food.name}</p>

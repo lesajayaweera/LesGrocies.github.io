@@ -210,7 +210,13 @@ const favouriteList = document.getElementById("favouriteList");
 const favouriteResetBtn = document.getElementById("favouriteReset");
 const Buybtn = document.getElementById("Buybtn");
 
-window.addEventListener("load", restFavourites);
+
+//----------------------------------------------------------------MAIN PROGRAM----------------------------------------------------------------------------------
+window.addEventListener("load", ()=>{
+  localStorage.removeItem("favourites")
+  localStorage.removeItem("cart");
+  localStorage.removeItem("currentOrder");
+});
 let cart = JSON.parse(localStorage.getItem("cart"));
 if (cart === null) {
   cart = [];
