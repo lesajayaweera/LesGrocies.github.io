@@ -21,7 +21,7 @@ bakingEssentials.forEach((product) => {
           <button class="cart-button">Add To Cart</button>
         </div>
       </a>
-  </div>;
+  </div>
   `
 
 })
