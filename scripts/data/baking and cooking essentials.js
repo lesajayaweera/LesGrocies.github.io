@@ -26,3 +26,4 @@ bakingEssentials.forEach((product) => {
 
 })
 document.getElementById("bakingContainer").innerHTML = bakingEsentials;
+console.log(bakingEsentials);

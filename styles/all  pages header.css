@@ -141,7 +141,7 @@
 .top-nav-container a.split-nav{
     float: right;
     background-color:#9DC5BB;
-    color:white;
+    color:black;
     transition: all 0.5s;
 }
 .top-nav-container a.split-nav:hover{
