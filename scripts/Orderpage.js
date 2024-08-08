@@ -1,12 +1,19 @@
 import { products } from "./data/product.js";
 
-
 //-----------------Functions--------------------------------------------------------------------------------------------------
 function Buy() {
   // Set the current order in local storage
   localStorage.setItem("currentOrder", JSON.stringify(cart));
+  let currentCart = JSON.parse(localStorage.getItem("currentOrder"));
+  console.log(currentCart);
+  
+  if (currentCart.length === 0) {
+    window.alert("Your cart is empty");
+  }else{
+    window.location.href = "checkout.html";
+  }
 
-  window.location.href = "checkout.html";
+  
   
 }
 
@@ -15,7 +22,7 @@ function adjustColspan() {
   colspans.forEach((element) => {
     if (window.innerWidth <= 818) {
       element.setAttribute("colspan", 2); // Small screens
-    } else if (window.innerWidth <= 1255) {
+    } else if (window.innerWidth <= 1200) {
       element.setAttribute("colspan", 3); // Medium screens
     } else {
       element.setAttribute("colspan", 4); // Large screens (default)
@@ -25,6 +32,7 @@ function adjustColspan() {
 
 function restFavourites() {
   localStorage.removeItem("favourites");
+  localStorage.removeItem("currentOrder")
   window.alert("favourite is reseted");
 
   resetCart();
@@ -87,9 +95,9 @@ function getThePrice(optionMenu, priceContainer, Input) {
     products.forEach((category) => {
       category.forEach((product) => {
         if (selectedOption === product.name) {
-          priceHTML = ` ${product.quantity} :  Rs. ${(
+          priceHTML = `<p id="Cost"> ${product.quantity} :  Rs. ${(
             product.price / 100
-          ).toFixed(2)}`;
+          ).toFixed(2)} </p>`;
           priceContainer.innerHTML = priceHTML;
         }
       });
@@ -106,7 +114,7 @@ function getThePrice(optionMenu, priceContainer, Input) {
             if (selectedOption === product.name) {
               const quantity = Number(InputValue);
               const price = product.price * quantity;
-              priceHTML = ` Cost :  Rs. ${(price / 100).toFixed(2)}`;
+              priceHTML = `<p id="Cost"> Cost :  Rs. ${(price / 100).toFixed(2)} </p>`;
               priceContainer.innerHTML = priceHTML;
             }
           });
@@ -226,7 +234,6 @@ console.log(cart);
 
 
 MainFunction();
-
 if (addFavouriteBtn) {
   addFavouriteBtn.onclick = saveToFavourites;
 }

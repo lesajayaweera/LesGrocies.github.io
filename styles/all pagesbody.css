@@ -1023,11 +1023,15 @@ form table td{
     background-color:hsl(165, 26%, 90%);
     border-radius: 8px;
     transition: all 0.5s;
+    place-items:center; 
     table{
         width:80%;
         margin: 0 auto;
     }
    
+}
+#orderButton{
+    width: 100%;
 }
 .orderContainer:hover{
     background-color:hsl(165, 26%, 70%) ;
@@ -1118,6 +1122,12 @@ form table td{
     }
   
 }
+#Cost{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #36454F;
+    font-weight: 700;
+}
 .options{
     width:200px;
     padding:4px;
@@ -1127,11 +1137,12 @@ form table td{
 }
 .CheckoutSection{
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color:hsl(120, 100%, 98%) ;
+    
 }
+
+
 
 @media (max-width:1255px){
     #checkoutForm{
@@ -1140,6 +1151,7 @@ form table td{
     .order-page-main-container{
         grid-template-columns: repeat(3,1fr);
     }
+    
 }
 @media (max-width:1070px){
     #checkoutForm{
@@ -1161,5 +1173,86 @@ form table td{
     }
     .col-1{
         display: none;
+    }
+}
+#addFavouriteBtn{
+    background-color: #ACE1AF;
+    padding:10px;
+    border:none;
+    border-radius: 8px;
+    font-family:  taviraj;
+    font-weight: 600;
+    color: black;
+    width: 200px;
+}
+#favouriteList{
+    background-color: #00FF7F;
+    padding: 10px;
+    border:none;
+    border-radius: 8px;
+    font-family:  taviraj;
+    font-weight: 600;
+    color: black;
+    width: 250px;
+}
+#favouriteReset{
+    background-color: #03C03C;
+    padding:10px;
+    border:none;
+    border-radius: 8px;
+    font-family:  taviraj;
+    font-weight: 600;
+    color: black;
+    width: 150px;
+}
+#Buybtn{
+    background-color: #00563B;
+    padding:10px;
+    border:none;
+    border-radius: 8px;
+    font-family:  taviraj;
+    font-weight: 600;
+    color: white;
+    width: 150px;
+
+
+}
+#checkoutbtn{
+    position:relative;
+    left:50%;
+    margin-bottom: 1rem;
+    
+}
+#orderHeader{
+    font-family: taviraj;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+#OrderButtons{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+/*
+#03C03C
+
+#00563B
+
+#00FF7F
+
+#ACE1AF
+
+#
+*/
+@media (max-width:1547px){
+    #OrderButtons{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 100%;
+        align-items: left;
     }
 }
