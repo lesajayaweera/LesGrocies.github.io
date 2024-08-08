@@ -389,9 +389,6 @@ body{
 .section4{
     margin-bottom:5px;
 }
-.image-container{
-
-}
 .aboutus-image-container{
     width:100%;
     height:360px;
@@ -1036,9 +1033,7 @@ form table td{
 .orderContainer:hover{
     background-color:hsl(165, 26%, 70%) ;
 }
-#cateogories-header{
-    
-}
+
 #orderImage{
     display:block;
 
