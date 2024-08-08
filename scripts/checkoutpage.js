@@ -5,11 +5,10 @@
 
 function pay() { // function to  check the form and proceed to pay
   const form = document.getElementById("checkoutForm");
+  const output = document.getElementById("paymentOutput");
+
   if (form.checkValidity()) {
-    alert(
-      "Thank you for your purchase! Your delivery date is " +
-        new Date(new Date().setDate(new Date().getDate() + 3)).toDateString()
-    );
+    output.innerHTML = `<p id="outText">Thank you for your purchase! Your delivery date is ${new Date(new Date().setDate(new Date().getDate() + 3)).toDateString()}</p>`;     
   } else {
     alert("Please fill out all fields correctly.");
   }
@@ -48,9 +47,11 @@ function UpdateOrderTable() { // function to   update order table in the checkou
 
 //---------------------------MAin Program-------------------------------------------------------------------------------
 const checkoutbtn = document.getElementById("checkoutbtn");
+const date = document.querySelector(".delivery-date");
 window.addEventListener("load", UpdateOrderTable);
 if (checkoutbtn) {
   checkoutbtn.addEventListener("click", pay);
 }
-
+ 
+date.innerHTML = `Estimated Delivery date:${new Date(new Date().setDate(new Date().getDate() + 3)).toDateString()}`;
 

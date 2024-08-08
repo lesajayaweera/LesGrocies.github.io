@@ -12,9 +12,6 @@ function Buy() {
   }else{
     window.location.href = "checkout.html";
   }
-
-  
-  
 }
 
 function adjustColspan() {
@@ -178,6 +175,7 @@ function addOrderButtonListener(orderButton) {
   });
 }
 
+// function to get the image 
 function getTheimage(optionMenue, imageContainer) {
   optionMenue.addEventListener("change", () => {
     const selectedOption = optionMenue.value;
@@ -195,6 +193,7 @@ function getTheimage(optionMenue, imageContainer) {
   });
 }
 
+// main funtion that loop through the containers
 function MainFunction() {
   
   orderContainer.forEach((container) => {
