@@ -14,7 +14,7 @@ function Buy() {
   }
 }
 
-function adjustColspan() {
+function adjustColspan() {// adjust the table of the cart table based on the screen width
   const colspans = document.querySelectorAll(".colspan");
   colspans.forEach((element) => {
     if (window.innerWidth <= 818) {
@@ -27,30 +27,30 @@ function adjustColspan() {
   });
 }
 
-function restFavourites() {
+function restFavourites() { //  to reset the cart and favourite
   localStorage.removeItem("favourites");
   localStorage.removeItem("currentOrder")
   window.alert("favourite is reseted");
 
   resetCart();
 }
-function resetCart() {
+function resetCart() { // to reset the cart
   localStorage.removeItem("cart");
   localStorage.removeItem("currentOrder");
   window.alert("cart is reseted");
 }
 
-function saveToFavourites() {
+function saveToFavourites() { // to save the cart  items to the favourite inthe local storage
   localStorage.setItem("favourites", JSON.stringify(cart));
   window.alert("Saved to the favourites");
 }
 
-function getFromFavourites() {
+function getFromFavourites() { // to fill the cart table with the favourite items that have been saved earlier
   cart = JSON.parse(localStorage.getItem("favourites"));
   updateThetable(cart);
 }
 
-function updateThetable() {
+function updateThetable() { // function to  fill out the cart table
   let Total = 0;
   const tbody = document.querySelector("#orderTable tbody");
   if (!tbody) return;
@@ -77,11 +77,11 @@ function updateThetable() {
   
 }
 
-function saveStorage() {
+function saveStorage() { // to save the cart on the local storage
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-function getThePrice(optionMenu, priceContainer, Input) {
+function getThePrice(optionMenu, priceContainer, Input) { // function  used to get the price and update it dynamically based omn the quantitty and adisplay in the HTML
   let selectedOption;
   let InputValue;
 
@@ -124,7 +124,7 @@ function getThePrice(optionMenu, priceContainer, Input) {
   });
 }
 
-function addOrderButtonListener(orderButton) {
+function addOrderButtonListener(orderButton) { // function to get the data  to the cart when the order button is clicked
   orderButton.addEventListener("click", () => {
     const optionMenu = orderButton
       .closest(".orderContainer")

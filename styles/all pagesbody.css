@@ -1,4 +1,4 @@
-/*homepage*/
+/*----------------------------------------homepage-------------------------------------------*/
 body{
     width: 100%;
 }
@@ -618,7 +618,7 @@ tfoot{
 }
 
 
-/*vegetable product page*/
+/*-------------------------------vegetable product page----------------------------------*/
 .section8{
     
     background-color: #9DC5BB;
@@ -688,9 +688,7 @@ tfoot{
 
     }
 }
-
-
-/* Dairy product page  */
+/* -----------------------------------------Dairy product page ------------------------------- */
 .product-main-container2{
     display:flex;
     flex-wrap:wrap;
@@ -708,7 +706,7 @@ tfoot{
 .list-dairy-products li{
     padding:1rem;
 }
-/*cosmatic page*/
+/*----------------------------------------cosmatic page-------------------------------------*/
 .cosmatic-table{
     width:90%;
     margin-left:auto;
@@ -770,7 +768,7 @@ tfoot{
         display:none;
     }
 }
-/* loyalty page */
+/* ------------------------------------------loyalty page------------------------------------ */
 .loyalty-main-image{
     width:100%;
     height:25rem;
@@ -948,7 +946,7 @@ form table td{
     flex-wrap: wrap;
     justify-content: center;
 }
-/*order page*/
+/*-------------------------------order page---------------------------------------------------*/
 /* .order-page-main-container {
     width:80%;
     margin-left:auto;
@@ -1040,8 +1038,7 @@ form table td{
 }
 .orderTable{
     table, th, td {
-        /* border: 1px solid black; */
-        /* border-collapse: collapse; */
+        
         padding: 10px;
         
     }
@@ -1114,6 +1111,9 @@ form table td{
         width: 90%;
         background-color: white;
         border-radius: 8px;
+        table{
+            width: 95%;
+        }
     }
   
 }
@@ -1231,17 +1231,7 @@ form table td{
     justify-content:space-evenly;
     align-items: center;
 }
-/*
-#03C03C
 
-#00563B
-
-#00FF7F
-
-#ACE1AF
-
-#
-*/
 @media (max-width:1547px){
     #OrderButtons{
         flex-direction: row;
@@ -1264,4 +1254,11 @@ form table td{
     font-family: taviraj;
     text-align: center;
     width: 100%;
+}
+#sucessIcon{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: block;
 }

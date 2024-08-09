@@ -1,14 +1,14 @@
 // functions
 //---------------------------------------------------------------------------------------------------------------------------
 
-
-
 function pay() { // function to  check the form and proceed to pay
   const form = document.getElementById("checkoutForm");
   const output = document.getElementById("paymentOutput");
 
   if (form.checkValidity()) {
-    output.innerHTML = `<p id="outText">Thank you for your purchase! Your delivery date is ${new Date(new Date().setDate(new Date().getDate() + 3)).toDateString()}</p>`;     
+    output.innerHTML = `<img id="sucessIcon" src="../images/js/sucess icon.png" alt="sucess icon"><br> <p id="outText">Thank you for your purchase! <br> Your delivery date is ${new Date(
+      new Date().setDate(new Date().getDate() + 3)
+    ).toDateString()}</p>`;     
   } else {
     alert("Please fill out all fields correctly.");
   }
